@@ -1,0 +1,107 @@
+a:hover {
+	color: yellow;
+}
+form div {
+	background-color: #33CCFF;
+}
+thead {
+	color: green;
+}
+tbody {
+	color: black;
+}
+tfoot {
+	color: red;
+}
+table, td, th {
+	border: 1px dotted white;
+}
+div ul li a {
+	color: red;
+}
+div ul li {
+	color: black;
+	font-size: 30px;
+	text-decoration: italic;
+}
+div ol li {
+	text-decoration: italic;
+	font-size: 15px;
+	color: blue;
+}
+footer {
+	position: relative;
+}
+header{
+	position: relative;
+	float: left;
+}
+nav{
+	float: right;
+}
+div{
+	background: #fff;
+	border: 6px solid #ccc;
+	margin: 20px;
+	padding: 20px;
+	width: 50%;
+}
+p {
+	color:green;
+	text-align: left;
+	text-decoration: blink;
+}
+.clase {
+	color:#33CCFF;
+}
+
+body {
+	background-color: #123232;
+
+	background-repeat: no-repeat;
+}
+
+h1	{
+	padding-top: 50px;
+	color:red;
+	text-align: right;
+	font-style: italic;
+}
+
+h2	{
+	color:yellow;
+	text-align: center;
+}
+
+a {
+	color:white;
+}
+.titulo {
+	font-size: 30px;
+	background-color: black;
+	text-align: center;
+}
+.footer2 {
+	background-color: black;
+	position: relative;
+}
+.footer1 {
+	background-color: blue;
+	font-size: 20px;
+	clear: both;
+	color: white;
+}
+.navbar {
+	background-color: blue;
+	font-size: 30px;
+
+}
+
+.divisor2 {
+	background: black;
+	border: 6px solid #fff;
+	margin: 20px;
+	padding: 20px;
+	width: 400px;
+	float: right;
+}
