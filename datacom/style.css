@@ -1,0 +1,29 @@
+html {
+	height: 100%;
+	width: 100%;
+}
+body {
+	margin: 0px 0px 0px 0px;
+	background-image: url("img/fondo.jpg");
+	background-repeat: no-repeat;
+	background-position: center;
+}
+.logo {
+	background-color: white;
+}
+.sin-extras li {
+	list-style-type: none;
+	font-size: 20px;
+}
+.sin-extras a:link {
+	text-decoration: none;
+}
+.info li {
+	color: white;
+}
+.info li i {
+	padding-right: 6px;
+}
+.fondo-footer {
+	background-color: black;
+}
