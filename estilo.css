@@ -2,7 +2,8 @@ a:hover {
 	color: yellow;
 }
 form div {
-	background-color: #33CCFF;
+background: linear-gradient(to right, red,blue,yellow,green);
+/* background-color: #33CCFF; */
 }
 thead {
 	color: green;
@@ -84,11 +85,11 @@ a {
 .footer2 {
 	background-color: black;
 	position: relative;
+	float: right;
 }
 .footer1 {
 	background-color: blue;
-	font-size: 20px;
-	clear: both;
+
 	color: white;
 }
 .navbar {
@@ -104,4 +105,22 @@ a {
 	padding: 20px;
 	width: 400px;
 	float: right;
+}
+.bordes {
+	border: 2px solid black;
+	border-radius: 15px;
+}
+.bordes2 {
+	border: 2px solid white;
+	border-radius: 30px ;
+}
+.sombra {
+	text-shadow: 1px 1px #000000;
+}
+.sombra2 {
+	text-shadow: 1px 1px red;
+}
+.dimensiones {
+	min-width: 99%;
+	min-height: 200px;
 }
