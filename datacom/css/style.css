@@ -1,0 +1,95 @@
+html {
+	height: 100%;
+	width: 100%;
+}
+body {
+	background-color: #1C175C;
+	margin: 0px 0px 0px 0px;
+/*	background-image: url("img/fondo.jpg"); */
+	background-repeat: no-repeat;
+	background-position: center;
+	height: 100%;
+	width: 100%;	
+}
+ul li a {
+	color: white;
+}
+section div {
+	padding-left: 20px;
+	color: white;
+	background-color: #332D76;
+	margin-top: 90px;
+	margin-left: 40px;
+	margin-right: 40px;
+	width: 20%;
+	border: white 2px solid;
+	border-radius: 10px;
+	height: 400px;
+}
+article div {
+	padding-left: 20px;
+	color: white;
+	background-color: #332D76;
+	margin-top: 30px;
+	margin-left: 40px;
+	width: 20%;
+	border: white 2px solid;
+	border-radius: 10px;
+	height: 256px;
+}
+aside div {
+	float: right;
+	padding-left: 20px;
+	color: white;
+	background-color: #332D76;
+	margin-top: 0px;
+	margin-right: 20px;
+	width: 20%;
+	border: white 2px solid;
+	border-radius: 10px;
+	width: 70%;
+	height: 690px;
+}
+aside div img {
+	float: left;
+	margin: 10px 10px 10px 10px;
+}
+.logo {
+	background-color: white;
+}
+.sin-extras li {
+	list-style-type: none;
+	font-size: 20px;
+}
+.sin-extras a:link {
+	text-decoration: none;
+}
+.info {
+	width: 100%;
+}
+.info li {
+	color: white;
+}
+.info li i {
+	padding-right: 6px;
+}
+.posicion_nav {
+	float: left;
+	padding-right: 85px;
+	padding-left: 85px;
+}
+.posicion_footer {
+	float: left;
+	padding-left: 85px;
+	padding-right: 85px;
+	max-width: 100%;
+}
+.footer_bottom {
+	position: fixed;
+	right: 0;
+	left: 0;
+	z-index: 1030;
+	bottom: 0;
+    margin-bottom: 0;
+    border-width: 1px 0 0;
+}
