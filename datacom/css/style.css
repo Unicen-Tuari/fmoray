@@ -92,27 +92,21 @@ nav li {
 }
 .posicion_nav {
 	float: left;
-	padding-right: 115px;
-	padding-left: 115px;
+	padding-right: 120px;
+	padding-left: 120px;
 }
 .posicion_footer {
 	float: left;
-	padding-left: 20px;
-	padding-right: 20px;
-	max-width: 100%;
+	padding-left: 40px;
+	padding-right: 40px;
 }
 .footer_bottom {
-	position: fixed;
-	right: 0;
-	left: 0;
-	z-index: 1030;
-	bottom: 0;
+	margin-top: 40px;
     margin-bottom: 0;
-    border-width: 1px 0 0;
 }
 .mas_info {
 	float: right;
-	margin-top: -5px;
+	margin-top: 20px;
 }
 .dimensiones {
 	min-width: 97%;
