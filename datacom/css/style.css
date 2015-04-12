@@ -13,36 +13,23 @@ body {
 	height: 100%;
 	width: 100%;	
 }
+header {
+
+}
 header div a img {
 	max-height: 118px; 
 }
-ul li a {
+ul a {
 	color: white;
 }
-section div {
-	padding-left: 20px;
-	color: white;
-	background-color: #332D76;
-	margin-top: 75px;
-	margin-left: 40px;
-	margin-right: 40px;
-	width: 20%;
-	border: white 2px solid;
-	border-radius: 10px;
-	height: 390px;
+ul a:hover {
+	color: #2D1A4F;
+}
+ul a:hover li {
+	background-color: white;
+	border-color: #2D1A4F; 
 }
 article div {
-	padding-left: 20px;
-	color: white;
-	background-color: #332D76;
-	margin-top: 30px;
-	margin-left: 40px;
-	width: 20%;
-	border: white 2px solid;
-	border-radius: 10px;
-	height: 266px;
-}
-aside div {
 	float: right;
 	padding-left: 20px;
 	color: white;
@@ -55,13 +42,13 @@ aside div {
 	width: 70%;
 	height: 690px;
 }
-aside div h1 {
+article div h1 {
 	margin-top: 8px;
 	margin-bottom: 0px;
 	font-size: 25px;
 	text-align: center;
 }
-aside div img {
+article div img {
 	border-radius: 4px;
 	float: left;
 	margin: 8px 8px 8px 8px;
@@ -70,6 +57,42 @@ nav li {
 	border: white solid 2px; 
 	border-radius: 3px;
 	background-color: #2D1A4F;
+}
+aside div {
+	padding-left: 20px;
+	color: white;
+	background-color: #332D76;
+	margin-top: 65px;
+	margin-left: 40px;
+	width: 20%;
+	border: white 2px solid;
+	border-radius: 10px;
+}
+aside div ul li {
+	font-size: 20px;
+}
+aside div ul li a:link{
+	text-decoration: none;
+}
+aside div button {
+	margin: 10px 10px 10px 10px;
+	border-radius: 4px;
+}
+section article form div {
+	margin-top: 2%;
+	max-width: 60%;
+	float: left;
+	margin-left: 20%;
+	margin-right: 20%;
+	height: 550px;
+}
+table, td, th {
+	border: 1px solid #544779;
+}
+.activo {
+	color: #2D1A4F;
+	background-color: white;
+	border-color: #2D1A4F; 
 }
 .logo {
 	background-color: white;
@@ -101,14 +124,42 @@ nav li {
 	padding-right: 40px;
 }
 .footer_bottom {
-	margin-top: 40px;
-    margin-bottom: 0;
+	position: absolute;
+	bottom: 0;
 }
 .mas_info {
 	float: right;
-	margin-top: 20px;
+	margin-top: 10px;
 }
 .dimensiones {
 	min-width: 97%;
-	min-height: 200px;
+	min-height: 60%;
+}
+.largo {
+	min-width: 97%;
+}
+.aside_serv {
+	padding-right: 10px;
+	font-size: 16px;
+	padding-bottom: 45px;
+	margin-top: 45px
+}
+.aside_quie {
+	padding: 10px 10px 10px 20px;
+	font-size: 16px;
+}
+.aside_quie h1 {
+	margin-top: 18px;
+	font-size: 25px;
+}
+.enviar_com {
+	float: right;
+	margin: 20px 10px 10px 10px;
+	border-radius: 4px;
+}
+.titulo_serv {
+	text-align: left;
+}
+.overflow {
+	overflow: scroll;
 }
