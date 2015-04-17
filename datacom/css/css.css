@@ -1,4 +1,5 @@
 body {
+  font-size: 14px;
   font-family: sans-serif;
   color: #000;
   background-color: #1C175C;
@@ -52,51 +53,16 @@ section aside {
   color: white;
   float: left;
   width: 23%;
-  margin-top: 30px;
-  font-size: 16px;
 }
 article {
   color: white;
 }
-footer {
-  position: fixed;
-  left: 0;
-  bottom: 0;
-  width: 100%;
-  color: white;
-  background-color: #0E021F;
-}
-footer ul {
-  width: 100%;
-  list-style-type: none;
-  padding-left: 0px;
-}
-footer ul li {
-  font-size: 20px;
-  display: inline-block;
-  width: 24%;
-  text-align: center;
-}
-table, td, th {
-  border: 1px solid white;
-  color: white;
-}
-.activo {
-  color: #2D1A4F;
-  background-color: white;
-  border-color: #2D1A4F; 
-}
-.activo li {
-  background-color: white;
-}
 .contenedor {
   border-radius: 5px;
   border: 2px solid #fff;
-  width: 73%;
+  width: 72%;
   float: right;
   margin-bottom: 60px;
-  margin-top: 30px;
-  max-height: 665px;
 }
 .contenedor .productos-lista {
   width: 214px;
@@ -106,44 +72,29 @@ table, td, th {
   float: left;
   margin: 10px 10px 10px 10px;
 }
-.contenedor .productos-lista img {
-  width: 100%;
-}
 .textos {
   margin-left: 30px;
   margin-bottom: 40px;
   border-radius: 5px;
   border: 2px solid #fff;
-  text-align: center;
+  text-align: justify;
   padding: 15px;
 }
 .textos h1 {
   text-align: center;
-  font-size: 25px;
-  margin-top: 5px;
-  margin-bottom: 5px;
+  font-size: 18px;
 }
-.textos ul a{
-  text-decoration: none;
-  color: white;
+footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  background-color: #000;
+  width: 100%;
 }
-.textos ul a:hover{
-  color: #2D1A4F;
+footer ul {
+  width: 100%;
+  list-style-type: none;
 }
-.overflow {
-  overflow: scroll;
-}
-.contenedor_form {
-  border-radius: 5px;
-  border: 2px solid #fff;
-  width: 50%;
-  margin: 0 auto 0 auto;
-  padding: 20px 5px 20px 20px;
-}
-.enviar_com {
-  float: right;
-  margin: 10px 10px 10px 10px;
-}
-.long {
-  width: 97%;
+footer ul li {
+  display: inline-block;
 }

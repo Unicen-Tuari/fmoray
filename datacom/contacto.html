@@ -1,55 +1,60 @@
-<!DOCTYPE html>
-<html lang="es">
-<head>
+<html>
+	<head>
 	<meta charset="UTF-8">
 	<link rel="stylesheet" href="css/style.css">
 	<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
 	<title>DATACOM</title>
 </head>
-<body>
-	<header>
-		<div class="logo">
-			<a href="index.html"><img src="img/header.jpg" alt=""></a>
-		</div>
-	</header>
-	<nav>
-		<ul class="sin-extras">
-			<a href="index.html"><li class="posicion_nav">Home</li></a>
-			<a href="servicios.html"><li class="posicion_nav">Servicios</li></a>
-			<a href="productos.html"><li class="posicion_nav">Productos</li></a>
-			<a href="contacto.html"><li class="posicion_nav activo">Contacto</li></a>
-		</ul>
-	</nav>
-	<section>
-		<article>
-			<form>
-				<div class="bordes"><br />
-					<label>Tu nombre:</label><br />
-					<input class="input largo" name="name" type="text" value=""/><br /><br />
-					<label>Tu email:</label><br />
-					<input class="input largo" name="email" type="text" value=""/><br /><br />
-					<label>Razon:</label><br /><br />
-					<input type="radio" name="razon" value="presupuesto">Presupuesto<br />
-					<input type="radio" name="razon" value="reparacion">Reparacion<br />
-					<input type="radio" name="razon" value="servicio">Servicio<br />
-					<input type="radio" name="razon" value="queja">Queja<br /><br />
-					<label>Comentario:</label><br />
-					<textarea name="comentario" id="" cols="95" rows="10"></textarea>
-					<input id="submit_button" type="submit" value="Enviar email" class="enviar_com" />
-				</div>
-			</form>
-		</article>
-	</section>
+	<body>
+		<header>
+			<img src="img/header.jpg" alt="">
+		</header>
+		<nav>
+			<ul>
+				<a href="index.html">
+					<li>Home</li>
+				</a>
+				<a href="servicios.html">
+					<li>Servicios</li>
+				</a>
+				<a href="productos.html">
+					<li>Productos</li>
+				</a>
+				<a href="contacto.html" class="activo">
+					<li>Contacto</li>
+				</a>
+			</ul>
+			</nav>
+		<section>
 
-	<footer>
-		<div class="sin-extras footer_bottom">
+			<article>
+				<div class="contenedor_form">
+					<form>
+						<div>
+							<label>Tu nombre:</label><br />
+							<input class="input long" name="name" type="text" value=""/><br /><br />
+							<label>Tu email:</label><br />
+							<input class="input long" name="email" type="text" value=""/><br /><br />
+							<label>Razon:</label><br /><br />
+							<input type="radio" name="razon" value="presupuesto">Presupuesto<br />
+							<input type="radio" name="razon" value="reparacion">Reparacion<br />
+							<input type="radio" name="razon" value="servicio">Servicio<br />
+							<input type="radio" name="razon" value="queja">Queja<br /><br />
+							<label>Comentario:</label><br />
+							<textarea name="comentario" id="" cols="80" rows="10"></textarea>
+							<input id="submit_button" type="submit" value="Enviar" class="enviar_com"/>
+						</div>
+					</form>
+				</div>
+			</article>
+		</section>
+		<footer>
 			<ul class="info"> 
-				<li class="posicion_footer"><i class="fa fa-home"></i>Gral Paz 657 | Tandil</li> 
-				<li class="posicion_footer"><i class="fa fa-phone"></i>(0249) 422-0302</li> 
-				<li class="posicion_footer"><i class="fa fa-envelope"></i>info@datacomtandil.com.ar</li>
-				<li class="posicion_footer"><i class="fa fa-facebook-square"></i>facebook.com/DATACOMTandil</li> 
+				<li><i class="fa fa-home"></i>Gral Paz 657 | Tandil</li> 
+				<li><i class="fa fa-phone"></i>(0249) 422-0302</li> 
+				<li><i class="fa fa-envelope"></i>info@datacomtandil.com.ar</li>
+				<li><i class="fa fa-facebook-square"></i>facebook.com/DATACOMTandil</li> 
 			</ul> 
-		</div>
-	</footer>
-</body>
+		</footer>
+	</body>
 </html>
