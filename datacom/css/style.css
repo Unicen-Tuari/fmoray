@@ -52,11 +52,21 @@ section aside {
   color: white;
   float: left;
   width: 23%;
-  margin-top: 30px;
+  margin-top: 10px;
   font-size: 16px;
 }
 article {
   color: white;
+}
+article h2{
+  margin-top: 10px;
+  margin-bottom: 0px;
+  text-align: center;
+  text-shadow:2px 2px black;
+}
+article h3{
+  text-align: center;
+  text-shadow:2px 2px black;
 }
 footer {
   position: fixed;
@@ -65,11 +75,14 @@ footer {
   width: 100%;
   color: white;
   background-color: #0E021F;
+  height: 30px;
 }
 footer ul {
   width: 100%;
   list-style-type: none;
   padding-left: 0px;
+  margin-top: 5px;
+  margin-bottom: 5px;
 }
 footer ul li {
   font-size: 20px;
@@ -77,9 +90,16 @@ footer ul li {
   width: 24%;
   text-align: center;
 }
+footer ul li i{
+  margin-right: 4px;
+}
 table, td, th {
   border: 1px solid white;
   color: white;
+}
+table {
+  text-align: center;
+  margin: 0px auto 0px auto;
 }
 .activo {
   color: #2D1A4F;
@@ -95,10 +115,10 @@ table, td, th {
   width: 73%;
   float: right;
   margin-bottom: 60px;
-  margin-top: 30px;
-  max-height: 665px;
+  margin-top: 10px;
+  max-height: 700px;
 }
-.contenedor .productos-lista {
+.contenedor .productos_lista {
   width: 214px;
   height: 308px;
   border-radius: 5px;
@@ -106,8 +126,18 @@ table, td, th {
   float: left;
   margin: 10px 10px 10px 10px;
 }
-.contenedor .productos-lista img {
+.contenedor .productos_lista img {
   width: 100%;
+}
+.contenedor p {
+  padding-left: 10px;
+}
+.contenedor h5 {
+  text-shadow:2px 2px black;
+  font-size: 14px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  padding-left: 10px;
 }
 .textos {
   margin-left: 30px;
@@ -122,6 +152,7 @@ table, td, th {
   font-size: 25px;
   margin-top: 5px;
   margin-bottom: 5px;
+  text-shadow:2px 2px black;
 }
 .textos ul a{
   text-decoration: none;
@@ -138,7 +169,7 @@ table, td, th {
   border: 2px solid #fff;
   width: 50%;
   margin: 0 auto 0 auto;
-  padding: 20px 5px 20px 20px;
+  padding: 0px 5px 20px 20px;
 }
 .enviar_com {
   float: right;
@@ -146,4 +177,7 @@ table, td, th {
 }
 .long {
   width: 97%;
+}
+.resaltar {
+  color: #CFB459;
 }
