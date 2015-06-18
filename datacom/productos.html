@@ -1,26 +1,78 @@
-<html>
-	<head>
-		<meta charset="UTF-8">
-		<link rel="stylesheet" href="css/style.css">
-		<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
-		<title>DATACOM</title>
-	</head>
-	<body>
-		<header>
-			<img src="img/header.jpg" alt="">
-		</header>
-		<nav>
-			<ul>
-				<a href="index.html"><li>Home</li></a>
-				<a href="servicios.html"><li>Servicios</li></a>
-				<a href="productos.html" class="activo"><li>Productos</li></a>
-				<a href="contacto.html"><li>Contacto</li></a>
-			</ul>
-		</nav>
-		<section>
-			<aside>
-				<div class="textos">
-					<h1>Productos</h1>
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/style.css">
+	<title>DATACOM</title>
+</head>
+<body>
+	<nav class="navbar navbar-default">
+	  <div class="container">
+	   
+	    <div class="navbar-header">
+	      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+	        <span class="sr-only">Toggle navigation</span>
+	        <span class="icon-bar"></span>
+	        <span class="icon-bar"></span>
+	        <span class="icon-bar"></span>
+	      </button>
+	      <div class="col-xs-4 centro">
+				<a href="index.html"><img src="img/brand.jpg" alt="brand"></a>
+		  </div>
+	    </div>
+
+	    
+	    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+	      <ul class="nav navbar-nav">
+	        <li class="active"><a href="index.html">Home<span class="sr-only">(current)</span></a></li>
+	        <li class="dropdown">
+	          <a href="servicios.html" class="dropdown-toggle" role="button" aria-expanded="false">Servicios<span class="caret"></span></a>
+	          <ul class="dropdown-menu" role="menu">
+	            <li><a href="servicios.html#soporte">Soporte Técnico</a></li>
+	            <li><a href="servicios.html#cableado">Redes lan/wifi</a></li>
+	            <li><a href="servicios.html#camaras">Cámaras Digitales</a></li>
+	            <li><a href="servicios.html#cartuchos">Cartuchos de Impresoras</a></li>
+	            <li class="divider"></li>
+	            <li><a href="servicios.html#precios">Lista de Precios</a></li>
+	          </ul>
+	        </li>
+	         <li class="dropdown">
+	          <a href="productos.html" class="dropdown-toggle" role="button" aria-expanded="false">Productos<span class="caret"></span></a>
+	          <ul class="dropdown-menu" role="menu">
+	            <li class="dropdown-submenu">
+				  <a tabindex="-1" href="productos.html#produc">Componentes de PC</a>
+				  <ul class="dropdown-menu">
+				    <li><a tabindex="-1" href="#">Mouse</a></li>
+				    <li><a href="productos.html#produc">Parlantes</a></li>
+				    <li><a href="productos.html#produc">Teclados</a></li>
+				  </ul>
+				</li>
+	            <li><a href="productos.html#produc">Equipos de Escritorio</a></li>
+	            <li><a href="productos.html#produc">Equipos Portátiles</a></li>
+	            <li><a href="productos.html#produc">Impresoras</a></li>
+	            <li><a href="productos.html#produc">Memoria y Almacenamiento</a></li>
+	            <li><a href="productos.html#produc">Redes y Comunicaciones</a></li>
+	          </ul>
+	        </li>
+	        <li data-toggle="modal" data-target="#myModal"><a href="#">Contacto</a></li>
+	      </ul>
+	      <form class="navbar-form navbar-right" role="search">
+	        <div class="form-group">
+	          <input type="text" size="4" class="form-control" placeholder="Buscar..">
+	        </div>
+	        <button type="submit" class="btn btn-default"><span class="glyphicon glyphicon-search" aria-hidden="true"></span></button>
+	      </form>
+	    </div>
+	  </div>
+	</nav>
+	<section>
+			<div class="container contenedor">
+
+				  <div class="col-lg-3 col-md-3 col-sm-12 textos">
+					<h1 id="produc">Productos</h1>
 					<ul>
 						<li><a href="#">Componentes para Computadoras</a></li><br />
 						<ul>
@@ -35,11 +87,9 @@
 						<li><a href="#">Redes y Comunicaciones</a></li>
 						
 					</ul>
-				</div>
-			</aside>
-			<article>
-				<div class="contenedor overflow">
-					<div class="productos_lista">
+				  </div>
+				  <div class="col-lg-8 col-lg-offset-1 col-md-8 col-md-offset-1 col-sm-12 col-xs-12 textos alto">
+				  	<div class="productos_lista">
 						<div>
 							<div>
 								<img src="img/mouse1.png" alt="">
@@ -48,7 +98,7 @@
 							</div>
 						</div>
 					</div>
-					<div class="productos_lista">
+				  	<div class="productos_lista">
 						<div>
 							<div>
 								<img src="img/mouse2.png" alt="">
@@ -106,8 +156,8 @@
 						<div>
 							<div>
 								<img src="img/pc1.png" alt="">
-								<h5>AMD Sempron 145, 2Gb ddr 3, HDD 320Gb</h5>
-								<p><span class="resaltar">$ 2.799,90</span><br />o 12 cuotas de <span class="resaltar">$ 356,96</span></p>
+								<h5>Impresora Laser Hp P 1102w Inalambrica</h5>
+								<p><span class="resaltar">$ 1.799,00</span><br />o 12 cuotas de <span class="resaltar">$ 229,36</span></p>
 							</div>
 						</div>
 					</div>
@@ -115,17 +165,17 @@
 						<div>
 							<div>
 								<img src="img/pc2.png" alt="">
-								<h5>Cpu I3-4150 3.5 Ghz, 4 Gb de RAM, 500 Gb HDD</h5>
-								<p><span class="resaltar">$ 8.000,00</span><br />o 12 cuotas de <span class="resaltar">$ 1,019.93</span></p>
+								<h5>Impresora Laser Hp P 1102w Inalambrica</h5>
+								<p><span class="resaltar">$ 1.799,00</span><br />o 12 cuotas de <span class="resaltar">$ 229,36</span></p>
 							</div>
 						</div>
 					</div>
-					<div class="productos_lista">
+				  	<div class="productos_lista">
 						<div>
 							<div>
 								<img src="img/pc3.png" alt="">
-								<h5>Cpu Intel I3, Mother Asus, 4 Gb de RAM, 250 Gb HDD</h5>
-								<p><span class="resaltar">$ 6.490,00</span><br />o 12 cuotas de <span class="resaltar">$ 827,42</span></p>
+								<h5>Impresora Laser Hp P 1102w Inalambrica</h5>
+								<p><span class="resaltar">$ 1.799,00</span><br />o 12 cuotas de <span class="resaltar">$ 229,36</span></p>
 							</div>
 						</div>
 					</div>
@@ -133,17 +183,17 @@
 						<div>
 							<div>
 								<img src="img/note1.png" alt="">
-								<h5>Acer V5 Touchscreen Amd A4 4gb 500gb Fact Gtia</h5>
-								<p><span class="resaltar">$ 6.299,99</span><br />o 12 cuotas de <span class="resaltar">$ 803,20</span></p>
+								<h5>Impresora Laser Hp P 1102w Inalambrica</h5>
+								<p><span class="resaltar">$ 1.799,00</span><br />o 12 cuotas de <span class="resaltar">$ 229,36</span></p>
 							</div>
 						</div>
 					</div>
-					<div class="productos_lista">
+				  	<div class="productos_lista">
 						<div>
 							<div>
 								<img src="img/note2.png" alt="">
-								<h5>Notebook Amd C70 Dual Core, 500gb, 4gb, Ati 7290 14"</h5>
-								<p><span class="resaltar">$ 5.299,90</span><br />o 12 cuotas de <span class="resaltar">$ 688,44</span></p>
+								<h5>Impresora Laser Hp P 1102w Inalambrica</h5>
+								<p><span class="resaltar">$ 1.799,00</span><br />o 12 cuotas de <span class="resaltar">$ 229,36</span></p>
 							</div>
 						</div>
 					</div>
@@ -151,7 +201,7 @@
 						<div>
 							<div>
 								<img src="img/tablet.png" alt="">
-								<h5>Tablet Android Pc 4.0 10 Pulgadas Hd 32gb</h5>
+								<h5>Impresora Laser Hp P 1102w Inalambrica</h5>
 								<p><span class="resaltar">$ 1.799,00</span><br />o 12 cuotas de <span class="resaltar">$ 229,36</span></p>
 							</div>
 						</div>
@@ -165,12 +215,12 @@
 							</div>
 						</div>
 					</div>
-					<div class="productos_lista">
+				  	<div class="productos_lista">
 						<div>
 							<div>
 								<img src="img/impr2.png" alt="">
-								<h5>Impresora Laser Color Red Wifi Cp1025nw 1025nw</h5>
-								<p><span class="resaltar">$ 2.689,00</span><br />o 12 cuotas de <span class="resaltar">$ 342,83</span></p>
+								<h5>Impresora Laser Hp P 1102w Inalambrica</h5>
+								<p><span class="resaltar">$ 1.799,00</span><br />o 12 cuotas de <span class="resaltar">$ 229,36</span></p>
 							</div>
 						</div>
 					</div>
@@ -178,17 +228,17 @@
 						<div>
 							<div>
 								<img src="img/mem1.png" alt="">
-								<h5>Memoria Ram 4gb 1866 Mhz Kingston Hyperx Fury Ddr3</h5>
-								<p><span class="resaltar">$ 679,00</span><br />o 12 cuotas de <span class="resaltar">$ 86,57</span></p>
+								<h5>Impresora Laser Hp P 1102w Inalambrica</h5>
+								<p><span class="resaltar">$ 1.799,00</span><br />o 12 cuotas de <span class="resaltar">$ 229,36</span></p>
 							</div>
 						</div>
 					</div>
-					<div class="productos_lista">
+				  	<div class="productos_lista">
 						<div>
 							<div>
 								<img src="img/mem2.png" alt="">
-								<h5>Memoria Sodimm Ddr3 4Gb 1333mhz Kingston Kvr1333</h5>
-								<p><span class="resaltar">$ 699,00</span><br />o 12 cuotas de <span class="resaltar">$ 89,12</span></p>
+								<h5>Impresora Laser Hp P 1102w Inalambrica</h5>
+								<p><span class="resaltar">$ 1.799,00</span><br />o 12 cuotas de <span class="resaltar">$ 229,36</span></p>
 							</div>
 						</div>
 					</div>
@@ -196,17 +246,17 @@
 						<div>
 							<div>
 								<img src="img/mem3.png" alt="">
-								<h5>Memoria Kingston Hyper X Savage Ddr3 2400mhz 2x8gb</h5>
-								<p><span class="resaltar">$ 4.299,00</span><br />o 12 cuotas de <span class="resaltar">$ 548,08</span></p>
+								<h5>Impresora Laser Hp P 1102w Inalambrica</h5>
+								<p><span class="resaltar">$ 1.799,00</span><br />o 12 cuotas de <span class="resaltar">$ 229,36</span></p>
 							</div>
 						</div>
 					</div>
-					<div class="productos_lista">
+				  	<div class="productos_lista">
 						<div>
 							<div>
 								<img src="img/disc1.png" alt="">
-								<h5>Hdd 1Tb Western Digital Blue</h5>
-								<p><span class="resaltar">$ 980,00</span><br />o 12 cuotas de <span class="resaltar">$ 124,94</span></p>
+								<h5>Impresora Laser Hp P 1102w Inalambrica</h5>
+								<p><span class="resaltar">$ 1.799,00</span><br />o 12 cuotas de <span class="resaltar">$ 229,36</span></p>
 							</div>
 						</div>
 					</div>
@@ -214,8 +264,8 @@
 						<div>
 							<div>
 								<img src="img/disc2.png" alt="">
-								<h5>Disco Solido 120gb Sata3 Kingston Pny</h5>
-								<p><span class="resaltar">$ 1.349,99</span><br />o 12 cuotas de <span class="resaltar">$ 172,11</span></p>
+								<h5>Impresora Laser Hp P 1102w Inalambrica</h5>
+								<p><span class="resaltar">$ 1.799,00</span><br />o 12 cuotas de <span class="resaltar">$ 229,36</span></p>
 							</div>
 						</div>
 					</div>
@@ -223,8 +273,8 @@
 						<div>
 							<div>
 								<img src="img/rout1.png" alt="">
-								<h5>Router Wifi Dual Band 5ghz Y 2.4ghz Hasta 750mbps</h5>
-								<p><span class="resaltar">$ 1.299,99</span><br />o 12 cuotas de <span class="resaltar">$ 165,74</span></p>
+								<h5>Impresora Laser Hp P 1102w Inalambrica</h5>
+								<p><span class="resaltar">$ 1.799,00</span><br />o 12 cuotas de <span class="resaltar">$ 229,36</span></p>
 							</div>
 						</div>
 					</div>
@@ -232,30 +282,71 @@
 						<div>
 							<div>
 								<img src="img/rout2.png" alt="">
-								<h5>Router Wi-fi Tp-link Tl-wr941 300mbps 3 Antenas</h5>
-								<p><span class="resaltar">$ 569,99</span><br />o 12 cuotas de <span class="resaltar">$ 72,67</span></p>
+								<h5>Impresora Laser Hp P 1102w Inalambrica</h5>
+								<p><span class="resaltar">$ 1.799,00</span><br />o 12 cuotas de <span class="resaltar">$ 229,36</span></p>
 							</div>
 						</div>
 					</div>
-					<div class="productos_lista">
+				  	<div class="productos_lista">
 						<div>
 							<div>
 								<img src="img/swit1.png" alt="">
-								<h5>Switch Tp Link Tl-sg1008d 8 Puertos 10/100/1000</h5>
-								<p><span class="resaltar">$ 389,99</span><br />o 12 cuotas de <span class="resaltar">$ 49,72</span></p>
+								<h5>Impresora Laser Hp P 1102w Inalambrica</h5>
+								<p><span class="resaltar">$ 1.799,00</span><br />o 12 cuotas de <span class="resaltar">$ 229,36</span></p>
 							</div>
 						</div>
 					</div>
+				  </div>
+
+				<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+				  <div class="modal-dialog">
+				    <div class="modal-content textmodal">
+				      <div class="modal-header">
+				        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+				        <h4 class="modal-title" id="myModalLabel">Tu comentario nos interesa</h4>
+				      </div>
+				      <div class="modal-body">
+				        <form>
+							<div>
+								<label>Tu nombre:</label><br />
+								<input class="input long" name="name" type="text" value=""/><br /><br />
+								<label>Tu email:</label><br />
+								<input class="input long" name="email" type="text" value=""/><br /><br />
+								<label>Razon:</label><br /><br />
+								<input type="radio" name="razon" value="presupuesto">Presupuesto<br />
+								<input type="radio" name="razon" value="reparacion">Reparacion<br />
+								<input type="radio" name="razon" value="servicio">Servicio<br />
+								<input type="radio" name="razon" value="presupuesto">Observación<br />
+								<input type="radio" name="razon" value="queja">Queja<br /><br />
+								<label>Comentario:</label><br />
+								<textarea name="comentario" id="" cols="52" rows="10"></textarea>
+							</div>
+						</form>
+				      </div>
+				      <div class="modal-footer">
+				        <button type="button" class="btn btn-default" data-dismiss="modal">Salir</button>
+				        <button type="button" class="btn btn-primary">Enviar Comentario</button>
+				      </div>
+				    </div>
+				  </div>
 				</div>
-			</article>
-		</section>
-		<footer>
-			<ul> 
-				<li><i class="fa fa-home"></i>Gral Paz 657 | Tandil</li> 
-				<li><i class="fa fa-phone"></i>(0249) 422-0302</li> 
-				<li><i class="fa fa-envelope"></i>info@datacomtandil.com.ar</li>
-				<li><i class="fa fa-facebook-square"></i>facebook.com/DATACOMTandil</li> 
-			</ul> 
-		</footer>
-	</body>
+			</div>
+
+	</section>
+	
+	<footer>
+		<div class="centrar">
+			<ul>
+				<li><i class="fa fa-camera-retro"></i>Gral Paz 657 | Tandil</li>
+				<li><i class="fa fa-camera-retro"></i>(0249) 422-0302</li>
+				<li><i class="fa fa-camera-retro"></i>info@datacomtandil.com.ar</li>
+				<li><i class="fa fa-camera-retro"></i>facebook.com/DATACOMTandil</li>
+			</ul>
+		</div>
+	</footer>
+
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+</body>
 </html>
