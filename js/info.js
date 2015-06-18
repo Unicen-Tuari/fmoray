@@ -1,10 +1,10 @@
 $(document).ready(function(){
-	$("#lnkHome").on("click",function(event){
+	$("#lnkPrincipal").on("click",function(event){
 		event.preventDefault();
 		$.ajax({
 			type: "GET",
 			dataType: "html",
-			url: "home.html",
+			url: "principal.html",
 			success: function(data){
 				$("#content").html(data);
 			},
