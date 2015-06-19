@@ -141,3 +141,4 @@ cada dado).
 	Cantidad de dados variable (numero leido de un input al comenzar el juego) 
 
 	Sumar los dados 
+*/
