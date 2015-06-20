@@ -142,3 +142,53 @@ cada dado).
 
 	Sumar los dados 
 */
+
+"use strict";
+
+var caras =[3,4,5,6,7,8];
+
+function tirarDados() {
+  	var num = Math.floor(Math.random()*( caras[Math.floor(Math.random()*6)] ))+1;
+  	return num;
+}
+
+function tirarDadosMuchasVeces(){
+	  var resultado = [];
+	  var suma = 0;
+	  for (var i = 0; i < document.getElementById('cantidadDados').value; i++) {
+	  	resultado.push(tirarDados());
+	  }
+	  $('#ponele').val(resultado);
+	  for (var x = 0; x < resultado.length; x++){
+	  	suma += resultado[x];
+	  }
+	  $("#ponele2").val(suma);
+}
+
+function enviarEinsertar(){
+  var producto = $("#producto").val();
+  var proceso = $("#proceso").val();
+  var precio = $("#precio").val();
+  var grupo = 37;
+  var informacion = [producto, proceso, precio];
+  var info = {
+      "group": grupo,
+      "thing": informacion
+      };
+
+  if (grupo && informacion){
+    $.ajax({
+       type: "POST",
+       dataType: 'JSON',
+       data: JSON.stringify(info),
+       contentType: "application/json; charset=utf-8",
+       url: "http://web-unicen.herokuapp.com/api/create",
+       success: function(data){
+         
+       },
+       error:function(data){
+         alert('No se pudo comunicar con el servidor');
+       }
+    });
+  }
+}

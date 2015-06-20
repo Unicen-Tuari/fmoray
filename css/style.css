@@ -63,7 +63,9 @@ footer button {
   margin-top: 11px;
   margin-right: 11px;
 }
-
+input {
+  color : #131846;
+}
 .centro{
 	padding-top:0px;
 	padding-bottom:0px;
