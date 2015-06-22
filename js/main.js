@@ -152,17 +152,17 @@ function tirarDados() {
   	return num;
 }
 
-function tirarDadosMuchasVeces(){
+function tirarMuchosDados(){
 	  var resultado = [];
 	  var suma = 0;
 	  for (var i = 0; i < document.getElementById('cantidadDados').value; i++) {
 	  	resultado.push(tirarDados());
 	  }
-	  $('#ponele').val(resultado);
+	  $('#nptValores').val(resultado);
 	  for (var x = 0; x < resultado.length; x++){
 	  	suma += resultado[x];
 	  }
-	  $("#ponele2").val(suma);
+	  $("#nptSuma").val(suma);
 }
 
 function enviarEinsertar(){
@@ -184,7 +184,7 @@ function enviarEinsertar(){
        contentType: "application/json; charset=utf-8",
        url: "http://web-unicen.herokuapp.com/api/create",
        success: function(data){
-         
+         alert('Deploy Success');
        },
        error:function(data){
          alert('No se pudo comunicar con el servidor');

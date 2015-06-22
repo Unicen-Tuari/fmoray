@@ -15,8 +15,16 @@
     margin-right: 1% !important;
   }
 }
+html,
+body { 
+  height: 100%; 
+  margin: 0; 
+  padding: 0; 
+}
 body{
   font-family: sans-serif;
+  width: 100%;
+  display: table;
 }
 nav {
 	margin-bottom: 20px !important;
@@ -47,13 +55,14 @@ table {
   margin-bottom: 5px;
 }
 footer {
-  position: absolute;
-  margin-bottom: 0;
   width: 100%;
   color: white;
   background-color: #0E021F;
   height: 65px;
   margin-top: 20px;
+}
+footer ul{
+  margin-bottom: 0px !important;
 }
 footer ul li {
   list-style:none;
@@ -65,6 +74,9 @@ footer button {
 }
 input {
   color : #131846;
+}
+.siempreAbajo{
+  display: table-row;
 }
 .centro{
 	padding-top:0px;
@@ -78,6 +90,7 @@ input {
   background-color: #131846;
   color: white;
   border-radius: 1px;
+  margin-bottom: 20px;
 }
 .contenedor h1 {
   text-align: center;
