@@ -1,0 +1,228 @@
+@media (max-width: 1199px) {
+  .productos_lista {
+    margin-left: 9% !important;
+  }
+}
+@media (max-width: 991px) {
+  .productos_lista {
+    margin-left: 12.5% !important;
+  }
+}
+@media (max-width: 767px) {
+  .productos_lista {
+    width: 98% !important;
+    margin-left: 1% !important;
+    margin-right: 1% !important;
+  }
+}
+html,
+body { 
+  height: 100%; 
+  margin: 0px; 
+  padding: 0px; 
+}
+body{
+  font-family: sans-serif;
+  width: 100%;
+  display: table;
+}
+nav {
+	margin-bottom: 20px !important;
+}
+ul.nav li.dropdown:hover > ul.dropdown-menu {
+    display: block;    
+}
+ol li{
+  background-color: #131846 !important;
+}
+h1{
+  font-size: 50px !important;
+}
+div button {
+  float:right;
+  color: #131846;
+  border-radius: 2px;
+  margin-bottom: 10px;
+}
+table, td, th {
+  border: 1px solid white;
+  color: white;
+}
+table {
+  text-align: center;
+  margin: 0px auto 0px auto;
+  font-size: 18px;
+  margin-bottom: 5px;
+}
+footer {
+  width: 100%;
+  color: white;
+  background-color: #0E021F;
+  height: 65px;
+  margin-top: 20px;
+}
+footer ul{
+  margin-bottom: 0px !important;
+}
+footer ul li {
+  list-style:none;
+  font-size: 10px;
+}
+footer button {
+  margin-top: 11px;
+  margin-right: 11px;
+}
+input {
+  color : #131846;
+}
+.colorTabla tr {
+  background-color: black;
+}
+.centro{
+	padding-top:0px;
+	padding-bottom:0px;
+}
+.centro img {
+	padding-top: 10px;
+	max-height: 40px;
+}
+.contenedor{
+  background-color: #131846;
+  color: white;
+  border-radius: 1px;
+  margin-bottom: 20px;
+}
+.contenedor h1 {
+  text-align: center;
+  text-shadow:2px 2px black;
+}
+.item img{
+  margin: 0 auto 0 auto;
+  max-width: 500px;
+  max-height: 400px;
+}
+.copete {
+  color: white;
+  text-align: center;
+  padding-left: 15%;
+  padding-right: 15%;
+}
+.siempreAbajo{
+  display: table-row;
+}
+.textos {
+  text-align: center;
+  border: 2px solid #fff;
+  border-radius: 10px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.textos p{
+  font-size: 16px;
+}
+.textos a{
+  color:white;
+  text-decoration: none;
+}
+.textos div img{
+  margin-top: 10px;
+  margin-bottom: 20px;
+  width: 100%;
+}
+.textos ul, li{
+  list-style: none;
+  padding: 0;
+}
+.productos_lista {
+  width: 214px;
+  border-radius: 5px;
+  border: 2px solid #fff;
+  float: left;
+  margin-left: 3%;
+  margin-top: 5px;
+}
+.productos_lista img {
+  width: 100%;
+}
+.resaltar {
+  color: #CFB459;
+}
+.textmodal {
+  color: #131846;
+}
+.textmodal div button {
+  color: white;
+  background-color: #131846;
+  margin: 5px 5px 5px 5px;
+}
+.long {
+  width: 100%;
+}
+.centrar {
+  text-align: center;
+  margin-top: 5px;
+}
+.centrar th{
+  text-align: center;
+  font-size: 25px;
+}
+.alto {
+  min-height: 500px;
+}
+.detalles p{
+  font-size: 30px !important;
+}
+.detalles button {
+  margin-bottom: 20px;
+  border-radius: 4px;
+}
+
+?????????????????????????????????????????????????????????????????????????????
+
+.dropdown-submenu {
+    position: relative;
+}
+
+.dropdown-submenu>.dropdown-menu {
+    top: 0;
+    left: 100%;
+    margin-top: -6px;
+    margin-left: -1px;
+    -webkit-border-radius: 0 6px 6px 6px;
+    -moz-border-radius: 0 6px 6px;
+    border-radius: 0 6px 6px 6px;
+}
+
+.dropdown-submenu:hover>.dropdown-menu {
+    display: block;
+}
+
+.dropdown-submenu>a:after {
+    display: block;
+    content: " ";
+    float: right;
+    width: 0;
+    height: 0;
+    border-color: transparent;
+    border-style: solid;
+    border-width: 5px 0 5px 5px;
+    border-left-color: #ccc;
+    margin-top: 5px;
+    margin-right: -10px;
+}
+
+.dropdown-submenu:hover>a:after {
+    border-left-color: #fff;
+}
+
+.dropdown-submenu.pull-left {
+    float: none;
+}
+
+.dropdown-submenu.pull-left>.dropdown-menu {
+    left: -100%;
+    margin-left: 10px;
+    -webkit-border-radius: 6px 0 6px 6px;
+    -moz-border-radius: 6px 0 6px 6px;
+    border-radius: 6px 0 6px 6px;
+}
