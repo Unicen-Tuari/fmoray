@@ -92,6 +92,24 @@ $(document).ready(function(){
 			url: "precios.html",
 			success: function(data){
 				$("#content").html(data);
+				var grupo = 62;
+				$.ajax({
+					 type: "GET",
+					 dataType: 'JSON',
+					 url: "http://web-unicen.herokuapp.com/api/group/" + grupo,
+					 success: function(data){
+					    var producto = "";
+					    var proceso = "";
+					    var precio = "";
+					    for (var i = 0; i < data.information.length; i++) {
+					         producto = data.information[i]['thing'][0];
+					         proceso = data.information[i]['thing'][1];
+					         precio = data.information[i]['thing'][2];
+					         $("#infoTabla").append("<tr><td>" + producto + "</td><td>" + proceso + "</td><td>" + precio + "</td></tr>");
+					    }
+				   
+				     }
+				});
 			},
 			error: function(){
 				alert("error");
@@ -135,6 +153,7 @@ $(document).ready(function(){
 });
 
 function enviarEinsertar(){
+  if (document.formPass.password.value=="1234"){
   var producto = $("#producto").val();
   var proceso = $("#proceso").val();
   var precio = $("#precio").val();
@@ -145,42 +164,57 @@ function enviarEinsertar(){
       "thing": informacion
       };
 
-  if (grupo && informacion){
-    $.ajax({
-       type: "POST",
-       dataType: 'JSON',
-       data: JSON.stringify(info),
-       contentType: "application/json; charset=utf-8",
-       url: "http://web-unicen.herokuapp.com/api/create",
-       success: function(data){
-         alert('Deploy Success');
-       },
-       error:function(data){
-         alert('No se pudo comunicar con el servidor');
-       }
-    });
-  }
-}
+	  if (grupo && informacion){
+	    $.ajax({
+	       type: "POST",
+	       dataType: 'JSON',
+	       data: JSON.stringify(info),
+	       contentType: "application/json; charset=utf-8",
+	       url: "http://web-unicen.herokuapp.com/api/create",
+	       success: function(data){
+	         
+                    $(document).ready(function(){
+						$.ajax({
+							type: "GET",
+							dataType: "html",
+							url: "precios.html",
+							success: function(data){
+								$("#content").html(data);
+								var grupo = 62;
+								$.ajax({
+									 type: "GET",
+									 dataType: 'JSON',
+									 url: "http://web-unicen.herokuapp.com/api/group/" + grupo,
+									 success: function(data){
+									    var producto = "";
+									    var proceso = "";
+									    var precio = "";
+									    for (var i = 0; i < data.information.length; i++) {
+									         producto = data.information[i]['thing'][0];
+									         proceso = data.information[i]['thing'][1];
+									         precio = data.information[i]['thing'][2];
+									         $("#infoTabla").append("<tr><td>" + producto + "</td><td>" + proceso + "</td><td>" + precio + "</td></tr>");
+									    }
+								   
+								     }
+								});
+							},
+							error: function(){
+								alert("error");
+							}				
+						})
+					});
 
-function getInformationByGroup(){
-  var grupo = 62;
-  $.ajax({
-     type: "GET",
-     dataType: 'JSON',
-     url: "http://web-unicen.herokuapp.com/api/group/" + grupo,
-     success: function(data){
-        var producto = "";
-        var proceso = "";
-        var precio = "";
-        for (var i = 0; i < data.information.length; i++) {
-	         producto = data.information[i]['thing'][0];
-	         proceso = data.information[i]['thing'][1];
-	         precio = data.information[i]['thing'][2];
-	         $("#infoTabla").append("<tr><td>" + producto + "</td><td>" + proceso + "</td><td>" + precio + "</td></tr>");
-        }
-       
-     }
-  });
+	       },
+	       error:function(data){
+	         alert('No se pudo comunicar con el servidor');
+	       }
+	    });
+	  }
+  }
+  else{
+  	alert("Error Contraseña. Intenta de nuevo.")
+  }
 }
 
 

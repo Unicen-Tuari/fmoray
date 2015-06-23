@@ -75,6 +75,11 @@ footer button {
 input {
   color : #131846;
 }
+#password {
+  width: 20%;
+  float: right;
+  margin-left: 10px;
+}
 .colorTabla tr {
   background-color: black;
 }
