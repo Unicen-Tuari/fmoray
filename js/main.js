@@ -134,6 +134,56 @@ $(document).ready(function(){
 	})
 });
 
+function enviarEinsertar(){
+  var producto = $("#producto").val();
+  var proceso = $("#proceso").val();
+  var precio = $("#precio").val();
+  var grupo = 62;
+  var informacion = [producto, proceso, precio];
+  var info = {
+      "group": grupo,
+      "thing": informacion
+      };
+
+  if (grupo && informacion){
+    $.ajax({
+       type: "POST",
+       dataType: 'JSON',
+       data: JSON.stringify(info),
+       contentType: "application/json; charset=utf-8",
+       url: "http://web-unicen.herokuapp.com/api/create",
+       success: function(data){
+         alert('Deploy Success');
+       },
+       error:function(data){
+         alert('No se pudo comunicar con el servidor');
+       }
+    });
+  }
+}
+
+function getInformationByGroup(){
+  var grupo = 62;
+  $.ajax({
+     type: "GET",
+     dataType: 'JSON',
+     url: "http://web-unicen.herokuapp.com/api/group/" + grupo,
+     success: function(data){
+        var producto = "";
+        var proceso = "";
+        var precio = "";
+        for (var i = 0; i < data.information.length; i++) {
+	         producto = data.information[i]['thing'][0];
+	         proceso = data.information[i]['thing'][1];
+	         precio = data.information[i]['thing'][2];
+	         $("#infoTabla").append("<tr><td>" + producto + "</td><td>" + proceso + "</td><td>" + precio + "</td></tr>");
+        }
+       
+     }
+  });
+}
+
+
 //----------------------------JUEGO---------------------------------//
 
 /* 	Dados de diferente cantidades de caras (en el código se indican la cantidad de caras de 
@@ -165,30 +215,3 @@ function tirarMuchosDados(){
 	  $("#nptSuma").val(suma);
 }
 
-function enviarEinsertar(){
-  var producto = $("#producto").val();
-  var proceso = $("#proceso").val();
-  var precio = $("#precio").val();
-  var grupo = 37;
-  var informacion = [producto, proceso, precio];
-  var info = {
-      "group": grupo,
-      "thing": informacion
-      };
-
-  if (grupo && informacion){
-    $.ajax({
-       type: "POST",
-       dataType: 'JSON',
-       data: JSON.stringify(info),
-       contentType: "application/json; charset=utf-8",
-       url: "http://web-unicen.herokuapp.com/api/create",
-       success: function(data){
-         alert('Deploy Success');
-       },
-       error:function(data){
-         alert('No se pudo comunicar con el servidor');
-       }
-    });
-  }
-}

@@ -1,103 +1,27 @@
 <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 textos detalles">
   	<h1>Lista de Precios</h1>
 	<div><img src="img/precios.jpg" alt=""></div>
-	<table class="table table-bordered">
-		<thead>
+	<table class="table table-bordered table-responsive">
+		<thead class="colorTabla">
 			<tr class="centrar">
 				<th >Producto</th>
 				<th >Proceso</th>
 				<th >Precio</th>
 			</tr>
 		</thead>
-		<tbody id="tablaInfo">
-			<tr>
-				<td>Domicilio</td>
-				<td>Servicio Tecnico en domicilio (p/ hora)</td>
-				<td>$ 200</td>
-			</tr>
-			<tr>
-				<td>Domicilio</td>
-				<td>Traslado de equipos para su reparacion</td>
-				<td>$ 100</td>
-			</tr>
-			<tr>
-				<td>Equipos</td>
-				<td>Reparacion de sistema operativo</td>
-				<td>$ 200</td>
-			</tr>
-			<tr>
-				<td>Equipos</td>
-				<td>Formateo sin resguardo</td>
-				<td>$ 250</td>
-			</tr>
-			<tr>
-				<td>Equipos</td>
-				<td>Formateo con resguardo</td>
-				<td>$ 300</td>
-			</tr>
-			<tr>
-				<td>Equipos</td>
-				<td>Limpieza operativa</td>
-				<td>$ 200</td>
-			</tr>
-			<tr>
-				<td>Equipos</td>
-				<td>Limpieza fisica</td>
-				<td>$ 150</td>
-			</tr>
-			<tr>
-				<td>Notebooks</td>
-				<td>Reparacion de sistema operativo</td>
-				<td>$ 200</td>
-			</tr>
-			<tr>
-				<td>Notebooks</td>
-				<td>Formateo sin resguardo</td>
-				<td>$ 250</td>
-			</tr>
-			<tr>
-				<td>Notebooks</td>
-				<td>Formateo con resguardo</td>
-				<td>$ 300</td>
-			</tr>
-			<tr>
-				<td>Notebooks</td>
-				<td>Limpieza operativa</td>
-				<td>$ 200</td>
-			</tr>
-			<tr>
-				<td>Notebooks</td>
-				<td>Limpieza fisica</td>
-				<td>$ 380</td>
-			</tr>
-			<tr>
-				<td>Notebooks</td>
-				<td>Mother Electronica (Gama baja)</td>
-				<td>$ 950</td>
-			</tr>
-			<tr>
-				<td>Notebooks</td>
-				<td>Mother Electronica (Gama alta)</td>
-				<td>$ 1990</td>
-			</tr>
-			<tr>
-				<td>Notebooks</td>
-				<td>Cambio display + display</td>
-				<td>$ 350</td>
-			</tr>
-			<tr>
-				<td>Notebooks</td>
-				<td>Reparacion flex</td>
-				<td>$ 650</td>
-			</tr>
+		<tbody id="infoTabla">
+			
+		</tbody>
+		<tfoot class="colorTabla">
 			<tr>
 				<td><input id="producto" type="text" class="form-control" placeholder="Ingrese producto..."></td>
 				<td><input id="proceso" type="text" class="form-control" placeholder="Ingrese proceso..."></td>
 				<td><input id="precio" type="text" class="form-control" placeholder="Ingrese precio..."></td>
 			</tr>
-		</tbody>
+		</tfoot>
 	</table>
 	<button type="button" class="btn btn-default" onclick="enviarEinsertar()">Agregar</button>
+	<button type="button" class="btn btn-default" onclick="getInformationByGroup()">Mostrar</button>
 </div>
 <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
 	<div class="modal-dialog">
