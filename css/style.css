@@ -1,20 +1,3 @@
-@media (max-width: 1199px) {
-  .productos_lista {
-    margin-left: 9% !important;
-  }
-}
-@media (max-width: 991px) {
-  .productos_lista {
-    margin-left: 12.5% !important;
-  }
-}
-@media (max-width: 767px) {
-  .productos_lista {
-    width: 98% !important;
-    margin-left: 1% !important;
-    margin-right: 1% !important;
-  }
-}
 html,
 body { 
   height: 100%; 
@@ -74,6 +57,38 @@ footer button {
 }
 input {
   color : #131846;
+}
+@media (max-width: 1199px) {
+  .productos_lista {
+    margin-left: 9% !important;
+  }
+}
+@media (max-width: 991px) {
+  .productos_lista {
+    margin-left: 12.5% !important;
+  }
+}
+@media (max-width: 767px) {
+  .productos_lista {
+    width: 98% !important;
+    margin-left: 1% !important;
+    margin-right: 1% !important;
+  }
+  .detalles p {
+    font-size: 15px !important;
+  }
+  .detalles h1 {
+    font-size: 30px !important;
+  }
+  .item img {
+    width: 70% !important;
+  }
+  .titulos h1 {
+    font-size: 30px !important;
+  }
+  .copete p {
+    display: none !important;
+  }
 }
 #password {
   width: 20%;
@@ -176,7 +191,7 @@ input {
   min-height: 500px;
 }
 .detalles p{
-  font-size: 30px !important;
+  font-size: 30px;
 }
 .detalles button {
   margin-bottom: 20px;
