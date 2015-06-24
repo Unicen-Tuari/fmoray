@@ -154,6 +154,7 @@ input {
 }
 .textmodal {
   color: #131846;
+  text-align: left;
 }
 .textmodal div button {
   color: white;
