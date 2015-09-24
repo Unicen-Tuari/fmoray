@@ -1,16 +1,33 @@
+<?php /* Smarty version 3.1.27, created on 2015-09-17 01:27:21
+         compiled from "/opt/lampp/htdocs/datacom/templates/cableado.tpl" */ ?>
+<?php
+/*%%SmartyHeaderCode:78905807955f9fad964a670_05604695%%*/
+if(!defined('SMARTY_DIR')) exit('no direct access allowed');
+$_valid = $_smarty_tpl->decodeProperties(array (
+  'file_dependency' => 
+  array (
+    'a781babd7e13d079f8b64e707b4031b10aa1b2bb' => 
+    array (
+      0 => '/opt/lampp/htdocs/datacom/templates/cableado.tpl',
+      1 => 1434608357,
+      2 => 'file',
+    ),
+  ),
+  'nocache_hash' => '78905807955f9fad964a670_05604695',
+  'has_nocache_code' => false,
+  'version' => '3.1.27',
+  'unifunc' => 'content_55f9fad972ec18_79612080',
+),false);
+/*/%%SmartyHeaderCode%%*/
+if ($_valid && !is_callable('content_55f9fad972ec18_79612080')) {
+function content_55f9fad972ec18_79612080 ($_smarty_tpl) {
+
+$_smarty_tpl->properties['nocache_hash'] = '78905807955f9fad964a670_05604695';
+?>
 <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 textos detalles">
-	<h1>Juego de Dados JavaScript</h1>
-	<div><img src="img/dados.jpg" alt=""></div>
-	<div>
-	<h3>Cantidad de Dados:  </h3>
-	<input id="cantidadDados" type="text" required/> </br>
-	<h3>Valores de Dados:</h3>
-	<input type="text" id="nptValores" readonly>
-	<h3>Suma:</h3>
-	<input type="text" id="nptSuma" readonly>
-	<div>
-		<button onclick="tirarMuchosDados()">Tirar Dados</button>
-	</div>
+	<h1>Cableado e Instalacion de redes lan/wifi</h1>
+	<div><img src="img/network.jpg" alt=""></div>
+	<p>Le ofrecemos soluciones adaptadas a sus necesidades. Entre nuestras principales soluciones profesionales ofrecemos la logística, análisis e implementación de Redes Corporativas, Redes de Área Local (LAN), Redes Inalámbricas (Wireless) y las infraestructuras necesarias para configurar Redes Privadas Virtuales (VPN) en las empresas. Con las máximas garantías.</p>
 </div>
 <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
 	<div class="modal-dialog">
@@ -43,4 +60,6 @@
 			</div>
 		</div>
 	</div>
-</div>
+</div><?php }
+}
+?>

@@ -1,4 +1,4 @@
-// FUNCIONES PARA CARGAR LOS HTML CON AJAX 
+// FUNCIONES PARA CARGAR LOS TPL CON AJAX 
 
 $(document).ready(function(){
 	$("#lnkPrincipal").on("click",function(event){
@@ -6,7 +6,7 @@ $(document).ready(function(){
 		$.ajax({
 			type: "GET",
 			dataType: "html",
-			url: "principal.html",
+			url: "index.php?action=principal",
 			success: function(data){
 				$("#content").html(data);
 			},
@@ -23,7 +23,7 @@ $(document).ready(function(){
 		$.ajax({
 			type: "GET",
 			dataType: "html",
-			url: "soporte.html",
+			url: "index.php?action=soporte",
 			success: function(data){
 				$("#content").html(data);
 			},
@@ -40,7 +40,7 @@ $(document).ready(function(){
 		$.ajax({
 			type: "GET",
 			dataType: "html",
-			url: "cableado.html",
+			url: "index.php?action=redes",
 			success: function(data){
 				$("#content").html(data);
 			},
@@ -57,7 +57,7 @@ $(document).ready(function(){
 		$.ajax({
 			type: "GET",
 			dataType: "html",
-			url: "camaras.html",
+			url: "index.php?action=camaras",
 			success: function(data){
 				$("#content").html(data);
 			},
@@ -74,7 +74,7 @@ $(document).ready(function(){
 		$.ajax({
 			type: "GET",
 			dataType: "html",
-			url: "cartuchos.html",
+			url: "index.php?action=cartuchos",
 			success: function(data){
 				$("#content").html(data);
 			},
@@ -91,7 +91,7 @@ $(document).ready(function(){
 		$.ajax({
 			type: "GET",
 			dataType: "html",
-			url: "precios.html",
+			url: "index.php?action=lista",
 			success: function(data){
 				$("#content").html(data);
 				var grupo = 62;
@@ -126,7 +126,7 @@ $(document).ready(function(){
 		$.ajax({
 			type: "GET",
 			dataType: "html",
-			url: "producto.html",
+			url: "index.php?action=productos",
 			success: function(data){
 				$("#content").html(data);
 			},
@@ -138,12 +138,12 @@ $(document).ready(function(){
 });
 
 $(document).ready(function(){
-	$("#lnkJuego").on("click",function(event){
+	$("#lnkAdmin").on("click",function(event){
 		event.preventDefault();
 		$.ajax({
 			type: "GET",
 			dataType: "html",
-			url: "juego.html",
+			url: "index.php?action=admin",
 			success: function(data){
 				$("#content").html(data);
 			},

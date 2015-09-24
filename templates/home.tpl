@@ -18,7 +18,7 @@
 		        <span class="icon-bar"></span>
 		        </button>
 		        <div class="col-xs-4 centro">
-			    	<a href="home.html"><img src="img/brand.jpg" alt="brand"></a>
+			    	<a href="index.php"><img src="img/brand.jpg" alt="brand"></a>
 			    </div>
 	    	</div>
 
@@ -187,7 +187,7 @@
 	</section>
 	<footer class="siempreAbajo">
 		<div class="centrar">
-			<button id="lnkJuego" type="button" class="btn btn-default">Juego</button>
+			<button id="lnkAdmin" type="button" class="btn btn-default">Admin</button>
 			<ul>
 				<li>Gral Paz 657 | Tandil</li>
 				<li>(0249) 422-0302</li>
