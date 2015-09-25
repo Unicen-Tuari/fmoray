@@ -1,7 +1,7 @@
-<?php /* Smarty version 3.1.27, created on 2015-09-25 22:16:17
+<?php /* Smarty version 3.1.27, created on 2015-09-26 00:41:45
          compiled from "/opt/lampp/htdocs/datacom/templates/home.tpl" */ ?>
 <?php
-/*%%SmartyHeaderCode:17074926125605ab91164764_35369441%%*/
+/*%%SmartyHeaderCode:8793981895605cda98bd4d9_15720398%%*/
 if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
   'file_dependency' => 
@@ -9,20 +9,20 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     'ede3fbe5c3f8170940280f800d04444b1f05858b' => 
     array (
       0 => '/opt/lampp/htdocs/datacom/templates/home.tpl',
-      1 => 1443101314,
+      1 => 1443220903,
       2 => 'file',
     ),
   ),
-  'nocache_hash' => '17074926125605ab91164764_35369441',
+  'nocache_hash' => '8793981895605cda98bd4d9_15720398',
   'has_nocache_code' => false,
   'version' => '3.1.27',
-  'unifunc' => 'content_5605ab912a06b5_49718353',
+  'unifunc' => 'content_5605cda9a01a45_36767892',
 ),false);
 /*/%%SmartyHeaderCode%%*/
-if ($_valid && !is_callable('content_5605ab912a06b5_49718353')) {
-function content_5605ab912a06b5_49718353 ($_smarty_tpl) {
+if ($_valid && !is_callable('content_5605cda9a01a45_36767892')) {
+function content_5605cda9a01a45_36767892 ($_smarty_tpl) {
 
-$_smarty_tpl->properties['nocache_hash'] = '17074926125605ab91164764_35369441';
+$_smarty_tpl->properties['nocache_hash'] = '8793981895605cda98bd4d9_15720398';
 ?>
 <!DOCTYPE html>
 <html lang="es">
@@ -84,11 +84,11 @@ $_smarty_tpl->properties['nocache_hash'] = '17074926125605ab91164764_35369441';
 					<li data-toggle="modal" data-target="#myModal"><a href="#">Contacto</a></li>
 				</ul>
 		      	<form class="navbar-form navbar-right" role="search">
-		        <div class="form-group">
-					<input type="text" size="4" class="form-control" placeholder="Buscar..">
-		        </div>
-		        <button type="submit" class="btn btn-default"><span class="glyphicon glyphicon-search" aria-hidden="true"></span></button>
-		      	</form>
+			        <div class="form-group">
+						<input type="text" size="4" class="form-control" placeholder="Buscar..">
+						<button type="submit" class="btn btn-default marg"><span class="glyphicon glyphicon-search" aria-hidden="true"></span></button>
+			        </div>
+		        </form>
 		    </div>
 		</div>
 	</nav>

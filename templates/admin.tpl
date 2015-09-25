@@ -27,6 +27,27 @@
 		         <td>Sachin</td>
 		         <td>Mumbai</td>
 		      </tr>
+		      <tr>
+		         <td>Mumbai</td>
+		         <td>Sachin</td>
+		         <td>Mumbai</td>
+		         <td>Sachin</td>
+		         <td>Mumbai</td>
+		      </tr>
+		      <tr>
+		         <td>Mumbai</td>
+		         <td>Sachin</td>
+		         <td>Mumbai</td>
+		         <td>Sachin</td>
+		         <td>Mumbai</td>
+		      </tr>
+		      <tr>
+		         <td>Mumbai</td>
+		         <td>Sachin</td>
+		         <td>Mumbai</td>
+		         <td>Sachin</td>
+		         <td>Mumbai</td>
+		      </tr>
 		    </tbody>
 		</table>
 	</div>
@@ -49,32 +70,24 @@
 		    </tbody>
 		</table>
 	</div>
-	<div class="bordes col-lg-7">
+	<form action="">
+	<div class="bordes col-lg-offset-2 col-lg-3">
 		<h6>Agregar Producto</h6>
 		<label>Categoria:</label>
 		<select id="tinta" name="tinta">
-		   <option value="1"> Elige un Color </option>
-		       <optgroup label="Primarios">
-		       <option onclick="amarillo()">Amarillo</option>
-		       <option onclick="azul()">Azul</option>
-		       <option onclick="rojo()">Rojo</option>
-		   </optgroup>
-		   <optgroup label="Secundarios">
-		       <option onclick="naranja()">Naranja</option>
-		       <option onclick="verde()">Verde</option>
-		       <option onclick="violeta()">Violeta</option>
-		   </optgroup>
+		   <option value="0">Elige una Categoria</option>
 		</select>
 		<label>Descripcion:</label>
-		<textarea rows="3" cols="20"></textarea></br>
+		<textarea rows="3" cols="20"></textarea>
 		<label>Precio:</label>
-		<input type="text" size="5"></br>
+		<input type="text" size="5">
 		<label>Ruta Imagen:</label>
-		<input type="file"></br>
+		<input type="file">
 		<input type="button" value="Agregar">
 	</div>
+	</form>
 	<form action="index.php?action=categoriaNueva" method="POST" enctype="multipart/form-data">
-		<div class="form-group bordes col-lg-4">
+		<div class="form-group bordes col-lg-offset-2 col-lg-3">
 			<h6>Agregar Categoria</h6>
 			<label for="categoria">Nombre Categoria:</label>
 			<input class="form-control" type="text" id="categoria" name="categoria" size="7" placeholder="Categoria">

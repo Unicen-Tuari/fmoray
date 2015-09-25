@@ -58,11 +58,11 @@
 					<li data-toggle="modal" data-target="#myModal"><a href="#">Contacto</a></li>
 				</ul>
 		      	<form class="navbar-form navbar-right" role="search">
-		        <div class="form-group">
-					<input type="text" size="4" class="form-control" placeholder="Buscar..">
-		        </div>
-		        <button type="submit" class="btn btn-default"><span class="glyphicon glyphicon-search" aria-hidden="true"></span></button>
-		      	</form>
+			        <div class="form-group">
+						<input type="text" size="4" class="form-control" placeholder="Buscar..">
+						<button type="submit" class="btn btn-default marg"><span class="glyphicon glyphicon-search" aria-hidden="true"></span></button>
+			        </div>
+		        </form>
 		    </div>
 		</div>
 	</nav>

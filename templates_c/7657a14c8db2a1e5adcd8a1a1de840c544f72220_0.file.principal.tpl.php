@@ -1,7 +1,7 @@
-<?php /* Smarty version 3.1.27, created on 2015-09-17 01:32:35
+<?php /* Smarty version 3.1.27, created on 2015-09-26 00:38:03
          compiled from "/opt/lampp/htdocs/datacom/templates/principal.tpl" */ ?>
 <?php
-/*%%SmartyHeaderCode:115761613355f9fc13cdaad7_27662709%%*/
+/*%%SmartyHeaderCode:638323935605cccb9c7e53_39767518%%*/
 if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
   'file_dependency' => 
@@ -13,16 +13,16 @@ $_valid = $_smarty_tpl->decodeProperties(array (
       2 => 'file',
     ),
   ),
-  'nocache_hash' => '115761613355f9fc13cdaad7_27662709',
+  'nocache_hash' => '638323935605cccb9c7e53_39767518',
   'has_nocache_code' => false,
   'version' => '3.1.27',
-  'unifunc' => 'content_55f9fc13d8a3b5_97574220',
+  'unifunc' => 'content_5605cccba6ea32_46369183',
 ),false);
 /*/%%SmartyHeaderCode%%*/
-if ($_valid && !is_callable('content_55f9fc13d8a3b5_97574220')) {
-function content_55f9fc13d8a3b5_97574220 ($_smarty_tpl) {
+if ($_valid && !is_callable('content_5605cccba6ea32_46369183')) {
+function content_5605cccba6ea32_46369183 ($_smarty_tpl) {
 
-$_smarty_tpl->properties['nocache_hash'] = '115761613355f9fc13cdaad7_27662709';
+$_smarty_tpl->properties['nocache_hash'] = '638323935605cccb9c7e53_39767518';
 ?>
 <h1>DESTACADOS DEL MES</h1>
 <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">

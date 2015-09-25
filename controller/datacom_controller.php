@@ -42,7 +42,7 @@
 		public function agregarCategoria(){
 			if(isset($_REQUEST['categoria'])){
 				$this->model->agregarCategoria($_REQUEST['categoria']);	
-				$this->mostrarAdmin();
+				$this->mostrarHome();
 			}
 		}
 	}

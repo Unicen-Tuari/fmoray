@@ -45,13 +45,8 @@ table {
   font-size: 18px;
   margin-bottom: 5px;
 }
-select{
+select, textarea{
   color: #131846;
-}
-textarea {
-  max-height: 25px !important;
-  color: #131846; 
-  margin-top: 40px !important;
 }
 footer {
   width: 100%;
@@ -110,6 +105,9 @@ input {
   width: 20%;
   float: right;
   margin-left: 10px;
+}
+.marg {
+  margin-top: 5px !important;
 }
 .colorTabla tr {
   background-color: black;
@@ -207,7 +205,7 @@ input {
   min-height: 500px;
 }
 .tope {
-  max-height: 300px;
+  max-height: 200px;
 }
 .detalles p{
   font-size: 30px;
@@ -267,13 +265,14 @@ input {
 .bordes {
   border: 2px solid white !important;
   border-radius: 2px !important;
-  text-align: left;
+  text-align: center;
   margin-bottom: 20px;
+  margin-top: 20px;
 }
-.bordes input, select {
+.bordes select , h6 , label, input{
   margin-bottom: 5px !important;
   margin-top : 5px !important;
 }
-.bordes label {
-  margin-left: 3px !important;
+.bordes h6 {
+  text-align: center !important;
 }

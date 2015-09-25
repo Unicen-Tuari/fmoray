@@ -1,7 +1,7 @@
-<?php /* Smarty version 3.1.27, created on 2015-09-25 22:25:58
+<?php /* Smarty version 3.1.27, created on 2015-09-26 00:42:54
          compiled from "/opt/lampp/htdocs/datacom/templates/admin.tpl" */ ?>
 <?php
-/*%%SmartyHeaderCode:6881980205605add6e64c80_85632283%%*/
+/*%%SmartyHeaderCode:11983890155605cdeee5c796_64357874%%*/
 if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
   'file_dependency' => 
@@ -9,11 +9,11 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     'ae1a3e15c244a06bec3c01ab9545043a105c6cb3' => 
     array (
       0 => '/opt/lampp/htdocs/datacom/templates/admin.tpl',
-      1 => 1443212586,
+      1 => 1443220899,
       2 => 'file',
     ),
   ),
-  'nocache_hash' => '6881980205605add6e64c80_85632283',
+  'nocache_hash' => '11983890155605cdeee5c796_64357874',
   'variables' => 
   array (
     'categorias' => 0,
@@ -21,13 +21,13 @@ $_valid = $_smarty_tpl->decodeProperties(array (
   ),
   'has_nocache_code' => false,
   'version' => '3.1.27',
-  'unifunc' => 'content_5605add6f1baf6_93503513',
+  'unifunc' => 'content_5605cdeef1f1d3_57565408',
 ),false);
 /*/%%SmartyHeaderCode%%*/
-if ($_valid && !is_callable('content_5605add6f1baf6_93503513')) {
-function content_5605add6f1baf6_93503513 ($_smarty_tpl) {
+if ($_valid && !is_callable('content_5605cdeef1f1d3_57565408')) {
+function content_5605cdeef1f1d3_57565408 ($_smarty_tpl) {
 
-$_smarty_tpl->properties['nocache_hash'] = '6881980205605add6e64c80_85632283';
+$_smarty_tpl->properties['nocache_hash'] = '11983890155605cdeee5c796_64357874';
 ?>
 <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 textos detalles">
 	<h1>Administrador</h1>
@@ -50,6 +50,27 @@ $_smarty_tpl->properties['nocache_hash'] = '6881980205605add6e64c80_85632283';
 		         <td>Tanmay</td>
 		         <td>Bangalore</td>
 		         <td>Tanmay</td>
+		      </tr>
+		      <tr>
+		         <td>Mumbai</td>
+		         <td>Sachin</td>
+		         <td>Mumbai</td>
+		         <td>Sachin</td>
+		         <td>Mumbai</td>
+		      </tr>
+		      <tr>
+		         <td>Mumbai</td>
+		         <td>Sachin</td>
+		         <td>Mumbai</td>
+		         <td>Sachin</td>
+		         <td>Mumbai</td>
+		      </tr>
+		      <tr>
+		         <td>Mumbai</td>
+		         <td>Sachin</td>
+		         <td>Mumbai</td>
+		         <td>Sachin</td>
+		         <td>Mumbai</td>
 		      </tr>
 		      <tr>
 		         <td>Mumbai</td>
@@ -95,32 +116,24 @@ $_smarty_tpl->tpl_vars['categoria'] = $foreach_categoria_Sav;
 		    </tbody>
 		</table>
 	</div>
-	<div class="bordes col-lg-7">
+	<form action="">
+	<div class="bordes col-lg-offset-2 col-lg-3">
 		<h6>Agregar Producto</h6>
 		<label>Categoria:</label>
 		<select id="tinta" name="tinta">
-		   <option value="1"> Elige un Color </option>
-		       <optgroup label="Primarios">
-		       <option onclick="amarillo()">Amarillo</option>
-		       <option onclick="azul()">Azul</option>
-		       <option onclick="rojo()">Rojo</option>
-		   </optgroup>
-		   <optgroup label="Secundarios">
-		       <option onclick="naranja()">Naranja</option>
-		       <option onclick="verde()">Verde</option>
-		       <option onclick="violeta()">Violeta</option>
-		   </optgroup>
+		   <option value="0">Elige una Categoria</option>
 		</select>
 		<label>Descripcion:</label>
-		<textarea rows="3" cols="20"></textarea></br>
+		<textarea rows="3" cols="20"></textarea>
 		<label>Precio:</label>
-		<input type="text" size="5"></br>
+		<input type="text" size="5">
 		<label>Ruta Imagen:</label>
-		<input type="file"></br>
+		<input type="file">
 		<input type="button" value="Agregar">
 	</div>
+	</form>
 	<form action="index.php?action=categoriaNueva" method="POST" enctype="multipart/form-data">
-		<div class="form-group bordes col-lg-4">
+		<div class="form-group bordes col-lg-offset-2 col-lg-3">
 			<h6>Agregar Categoria</h6>
 			<label for="categoria">Nombre Categoria:</label>
 			<input class="form-control" type="text" id="categoria" name="categoria" size="7" placeholder="Categoria">
