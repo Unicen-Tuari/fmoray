@@ -1,6 +1,6 @@
 <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 textos detalles">
 	<h1>Administrador</h1>
-	<div class="table-responsive">
+	<div class="table-responsive tope">
 		<h6>Tabla de Productos</h6>
 		<table class="table">
 		    <thead>
@@ -30,24 +30,22 @@
 		    </tbody>
 		</table>
 	</div>
-	<div class="table-responsive">
+	<div class="table-responsive tope">
 		<h6>Tabla de Categorias</h6>
 		<table class="table">
 		    <thead>
-		      <tr>
-		         <th>Id Categoria</th>
-		         <th>Nombre Categoria</th>
-		      </tr>
+		      	<tr>
+		        	<th>Id Categoria</th>
+		        	<th>Nombre Categoria</th>
+		      	</tr>
    			</thead>
 		    <tbody>
-		      <tr>
-		         <td>Tanmay</td>
-		         <td>Bangalore</td>
-		      </tr>
-		      <tr>
-		         <td>Sachin</td>
-		         <td>Mumbai</td>
-		      </tr>
+		    	{foreach $categorias as $categoria}
+		    		<tr>
+		    			<td>{$categoria.id_categoria}</td>
+		    			<td>{$categoria.nombre_categoria}</td>
+		    		</tr>
+		    	{/foreach}
 		    </tbody>
 		</table>
 	</div>
@@ -75,14 +73,16 @@
 		<input type="file"></br>
 		<input type="button" value="Agregar">
 	</div>
-	
-	<div class="bordes col-lg-4">
-		<h6>Agregar Categoria</h6>
-		<label for="">Nombre Categoria:</label>
-		<input type="text" size="7">
-		<input type="button" value="Agregar">
-	</div>  
+	<form action="index.php?action=categoriaNueva" method="POST" enctype="multipart/form-data">
+		<div class="form-group bordes col-lg-4">
+			<h6>Agregar Categoria</h6>
+			<label for="categoria">Nombre Categoria:</label>
+			<input class="form-control" type="text" id="categoria" name="categoria" size="7" placeholder="Categoria">
+			<input type="submit" value="Agregar">
+		</div>
+	</form>  
 </div>
+
 <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
 	<div class="modal-dialog">
 		<div class="modal-content  textmodal">

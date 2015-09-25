@@ -1,7 +1,7 @@
 <?php
 
 	require_once('view/datacom_view.php');
-	require_once('view/datacom_model.php');
+	require_once('model/datacom_model.php');
 
 	class DatacomController{
 		private $model;
@@ -9,6 +9,7 @@
 
 		function __construct(){
 			$this->view = new DatacomView();
+			$this->model = new DatacomModel();
 		}
 
 		public function mostrarHome(){
@@ -36,8 +37,13 @@
 			$this->view->mostrarProductos();
 		}
 		public function mostrarAdmin(){
-			$this->view->mostrarAdmin();
+			$this->view->mostrarAdmin($this->model->leerCategoria());
 		}  
+		public function agregarCategoria(){
+			if(isset($_REQUEST['categoria'])){
+				$this->model->agregarCategoria($_REQUEST['categoria']);	
+				$this->mostrarAdmin();
+			}
+		}
 	}
-
 ?>

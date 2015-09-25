@@ -1,7 +1,7 @@
-<?php /* Smarty version 3.1.27, created on 2015-09-17 02:03:07
+<?php /* Smarty version 3.1.27, created on 2015-09-25 22:36:59
          compiled from "/opt/lampp/htdocs/datacom/templates/productos.tpl" */ ?>
 <?php
-/*%%SmartyHeaderCode:210142954055fa033b1ac4d2_50746559%%*/
+/*%%SmartyHeaderCode:18820965065605b06b17bbf5_26826855%%*/
 if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
   'file_dependency' => 
@@ -9,20 +9,20 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     '5995d1ae1e01998b1c27fe67a1027198f6ab35be' => 
     array (
       0 => '/opt/lampp/htdocs/datacom/templates/productos.tpl',
-      1 => 1435165405,
+      1 => 1443127060,
       2 => 'file',
     ),
   ),
-  'nocache_hash' => '210142954055fa033b1ac4d2_50746559',
+  'nocache_hash' => '18820965065605b06b17bbf5_26826855',
   'has_nocache_code' => false,
   'version' => '3.1.27',
-  'unifunc' => 'content_55fa033b270941_01594473',
+  'unifunc' => 'content_5605b06b29f283_22062299',
 ),false);
 /*/%%SmartyHeaderCode%%*/
-if ($_valid && !is_callable('content_55fa033b270941_01594473')) {
-function content_55fa033b270941_01594473 ($_smarty_tpl) {
+if ($_valid && !is_callable('content_5605b06b29f283_22062299')) {
+function content_5605b06b29f283_22062299 ($_smarty_tpl) {
 
-$_smarty_tpl->properties['nocache_hash'] = '210142954055fa033b1ac4d2_50746559';
+$_smarty_tpl->properties['nocache_hash'] = '18820965065605b06b17bbf5_26826855';
 ?>
 <div class="col-lg-3 col-md-3 col-sm-12 textos">
 	<h1>Productos</h1>

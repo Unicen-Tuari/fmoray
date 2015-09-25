@@ -10,6 +10,7 @@
 		public static $ACTION_LISTA = 'lista';
 		public static $ACTION_PRODUCTOS = 'productos';
 		public static $ACTION_ADMIN = 'admin';
+		public static $ACTION_AGREGAR_CATEGORIA = 'categoriaNueva';
 	}
 
 

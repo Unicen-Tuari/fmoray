@@ -13,31 +13,34 @@
 		switch ($_REQUEST[ConfigApp::$ACTION])
 		{
 			case ConfigApp::$ACTION_PRINCIPAL:
-			$datacomController->mostrarPrincipal();
+				$datacomController->mostrarPrincipal();
 			break;
 			case ConfigApp::$ACTION_SOPORTE:
-			$datacomController->mostrarSoporte();
+				$datacomController->mostrarSoporte();
 			break;
 			case ConfigApp::$ACTION_REDES:
-			$datacomController->mostrarRedes();
+				$datacomController->mostrarRedes();
 			break;
 			case ConfigApp::$ACTION_CAMARAS:
-			$datacomController->mostrarCamaras();
+				$datacomController->mostrarCamaras();
 			break;
 			case ConfigApp::$ACTION_CARTUCHOS:
-			$datacomController->mostrarCartuchos();
+				$datacomController->mostrarCartuchos();
 			break;
 			case ConfigApp::$ACTION_LISTA:
-			$datacomController->mostrarLista();
+				$datacomController->mostrarLista();
 			break;
 			case ConfigApp::$ACTION_PRODUCTOS:
-			$datacomController->mostrarProductos();
+				$datacomController->mostrarProductos();
 			break;
 			case ConfigApp::$ACTION_ADMIN:
-			$datacomController->mostrarAdmin();
+				$datacomController->mostrarAdmin();
+			break;
+			case ConfigApp::$ACTION_AGREGAR_CATEGORIA:
+				$datacomController->agregarCategoria();
 			break;
 			default:
-			echo 'Pagina no esiste';
+			echo 'Pagina no existe';
 			break;
 		}
 		}
