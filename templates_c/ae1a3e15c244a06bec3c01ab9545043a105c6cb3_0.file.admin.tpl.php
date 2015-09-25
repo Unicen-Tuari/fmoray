@@ -1,7 +1,7 @@
-<?php /* Smarty version 3.1.27, created on 2015-09-24 15:30:09
+<?php /* Smarty version 3.1.27, created on 2015-09-25 19:10:51
          compiled from "/opt/lampp/htdocs/datacom/templates/admin.tpl" */ ?>
 <?php
-/*%%SmartyHeaderCode:17524748705603fae1375d79_43598476%%*/
+/*%%SmartyHeaderCode:5386498925605801bc12233_22194256%%*/
 if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
   'file_dependency' => 
@@ -9,24 +9,105 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     'ae1a3e15c244a06bec3c01ab9545043a105c6cb3' => 
     array (
       0 => '/opt/lampp/htdocs/datacom/templates/admin.tpl',
-      1 => 1443101319,
+      1 => 1443201000,
       2 => 'file',
     ),
   ),
-  'nocache_hash' => '17524748705603fae1375d79_43598476',
+  'nocache_hash' => '5386498925605801bc12233_22194256',
   'has_nocache_code' => false,
   'version' => '3.1.27',
-  'unifunc' => 'content_5603fae13f8227_80152303',
+  'unifunc' => 'content_5605801bcaad81_93241100',
 ),false);
 /*/%%SmartyHeaderCode%%*/
-if ($_valid && !is_callable('content_5603fae13f8227_80152303')) {
-function content_5603fae13f8227_80152303 ($_smarty_tpl) {
+if ($_valid && !is_callable('content_5605801bcaad81_93241100')) {
+function content_5605801bcaad81_93241100 ($_smarty_tpl) {
 
-$_smarty_tpl->properties['nocache_hash'] = '17524748705603fae1375d79_43598476';
+$_smarty_tpl->properties['nocache_hash'] = '5386498925605801bc12233_22194256';
 ?>
 <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 textos detalles">
 	<h1>Administrador</h1>
-	<div><img src="img/cartuchos.jpg" alt=""></div>
+	<div class="table-responsive">
+		<h6>Tabla de Productos</h6>
+		<table class="table">
+		    <thead>
+		      <tr>
+		         <th>Id Producto</th>
+		         <th>Id Categoria</th>
+		         <th>Descripcion</th>
+		         <th>Precio</th>
+		         <th>Ruta Imagen</th>
+		      </tr>
+   			</thead>
+		    <tbody>
+		      <tr>
+		         <td>Tanmay</td>
+		         <td>Bangalore</td>
+		         <td>Tanmay</td>
+		         <td>Bangalore</td>
+		         <td>Tanmay</td>
+		      </tr>
+		      <tr>
+		         <td>Mumbai</td>
+		         <td>Sachin</td>
+		         <td>Mumbai</td>
+		         <td>Sachin</td>
+		         <td>Mumbai</td>
+		      </tr>
+		    </tbody>
+		</table>
+	</div>
+	<div class="table-responsive">
+		<h6>Tabla de Categorias</h6>
+		<table class="table">
+		    <thead>
+		      <tr>
+		         <th>Id Categoria</th>
+		         <th>Nombre Categoria</th>
+		      </tr>
+   			</thead>
+		    <tbody>
+		      <tr>
+		         <td>Tanmay</td>
+		         <td>Bangalore</td>
+		      </tr>
+		      <tr>
+		         <td>Sachin</td>
+		         <td>Mumbai</td>
+		      </tr>
+		    </tbody>
+		</table>
+	</div>
+	<div class="bordes col-lg-7">
+		<h6>Agregar Producto</h6>
+		<label>Categoria:</label>
+		<select id="tinta" name="tinta">
+		   <option value="1"> Elige un Color </option>
+		       <optgroup label="Primarios">
+		       <option onclick="amarillo()">Amarillo</option>
+		       <option onclick="azul()">Azul</option>
+		       <option onclick="rojo()">Rojo</option>
+		   </optgroup>
+		   <optgroup label="Secundarios">
+		       <option onclick="naranja()">Naranja</option>
+		       <option onclick="verde()">Verde</option>
+		       <option onclick="violeta()">Violeta</option>
+		   </optgroup>
+		</select>
+		<label>Descripcion:</label>
+		<textarea rows="3" cols="20"></textarea></br>
+		<label>Precio:</label>
+		<input type="text" size="5"></br>
+		<label>Ruta Imagen:</label>
+		<input type="file"></br>
+		<input type="button" value="Agregar">
+	</div>
+	
+	<div class="bordes col-lg-4">
+		<h6>Agregar Categoria</h6>
+		<label for="">Nombre Categoria:</label>
+		<input type="text" size="7">
+		<input type="button" value="Agregar">
+	</div>  
 </div>
 <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
 	<div class="modal-dialog">

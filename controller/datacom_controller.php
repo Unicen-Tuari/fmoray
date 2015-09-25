@@ -1,8 +1,10 @@
 <?php
 
 	require_once('view/datacom_view.php');
+	require_once('view/datacom_model.php');
 
 	class DatacomController{
+		private $model;
 		private $view;
 
 		function __construct(){

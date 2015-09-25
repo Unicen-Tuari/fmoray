@@ -21,6 +21,13 @@ ol li{
 h1{
   font-size: 50px !important;
 }
+h6 {
+  text-align: left !important;
+  font-size: 15px !important;
+  margin-top: 0px !important;
+  text-decoration: underline;
+  font-weight: bolder;
+}
 div button {
   float:right;
   color: #131846;
@@ -30,12 +37,21 @@ div button {
 table, td, th {
   border: 1px solid white;
   color: white;
+  text-align: center;
 }
 table {
   text-align: center;
   margin: 0px auto 0px auto;
   font-size: 18px;
   margin-bottom: 5px;
+}
+select{
+  color: #131846;
+}
+textarea {
+  max-height: 25px !important;
+  color: #131846; 
+  margin-top: 40px !important;
 }
 footer {
   width: 100%;
@@ -246,4 +262,17 @@ input {
     -webkit-border-radius: 6px 0 6px 6px;
     -moz-border-radius: 6px 0 6px 6px;
     border-radius: 6px 0 6px 6px;
+}
+.bordes {
+  border: 2px solid white !important;
+  border-radius: 2px !important;
+  text-align: left;
+  margin-bottom: 20px;
+}
+.bordes input, select {
+  margin-bottom: 5px !important;
+  margin-top : 5px !important;
+}
+.bordes label {
+  margin-left: 3px !important;
 }

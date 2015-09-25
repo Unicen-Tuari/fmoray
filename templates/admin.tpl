@@ -1,6 +1,87 @@
 <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 textos detalles">
 	<h1>Administrador</h1>
-	<div><img src="img/cartuchos.jpg" alt=""></div>
+	<div class="table-responsive">
+		<h6>Tabla de Productos</h6>
+		<table class="table">
+		    <thead>
+		      <tr>
+		         <th>Id Producto</th>
+		         <th>Id Categoria</th>
+		         <th>Descripcion</th>
+		         <th>Precio</th>
+		         <th>Ruta Imagen</th>
+		      </tr>
+   			</thead>
+		    <tbody>
+		      <tr>
+		         <td>Tanmay</td>
+		         <td>Bangalore</td>
+		         <td>Tanmay</td>
+		         <td>Bangalore</td>
+		         <td>Tanmay</td>
+		      </tr>
+		      <tr>
+		         <td>Mumbai</td>
+		         <td>Sachin</td>
+		         <td>Mumbai</td>
+		         <td>Sachin</td>
+		         <td>Mumbai</td>
+		      </tr>
+		    </tbody>
+		</table>
+	</div>
+	<div class="table-responsive">
+		<h6>Tabla de Categorias</h6>
+		<table class="table">
+		    <thead>
+		      <tr>
+		         <th>Id Categoria</th>
+		         <th>Nombre Categoria</th>
+		      </tr>
+   			</thead>
+		    <tbody>
+		      <tr>
+		         <td>Tanmay</td>
+		         <td>Bangalore</td>
+		      </tr>
+		      <tr>
+		         <td>Sachin</td>
+		         <td>Mumbai</td>
+		      </tr>
+		    </tbody>
+		</table>
+	</div>
+	<div class="bordes col-lg-7">
+		<h6>Agregar Producto</h6>
+		<label>Categoria:</label>
+		<select id="tinta" name="tinta">
+		   <option value="1"> Elige un Color </option>
+		       <optgroup label="Primarios">
+		       <option onclick="amarillo()">Amarillo</option>
+		       <option onclick="azul()">Azul</option>
+		       <option onclick="rojo()">Rojo</option>
+		   </optgroup>
+		   <optgroup label="Secundarios">
+		       <option onclick="naranja()">Naranja</option>
+		       <option onclick="verde()">Verde</option>
+		       <option onclick="violeta()">Violeta</option>
+		   </optgroup>
+		</select>
+		<label>Descripcion:</label>
+		<textarea rows="3" cols="20"></textarea></br>
+		<label>Precio:</label>
+		<input type="text" size="5"></br>
+		<label>Ruta Imagen:</label>
+		<input type="file"></br>
+		<input type="button" value="Agregar">
+	</div>
+	
+	<div class="bordes col-lg-4">
+		<h6>Agregar Categoria</h6>
+		<label for="">Nombre Categoria:</label>
+		<input type="text" size="7">
+		<input type="button" value="Agregar">
+	</div>  
 </div>
 <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
 	<div class="modal-dialog">
