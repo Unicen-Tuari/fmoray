@@ -9,6 +9,11 @@ body{
   width: 100%;
   display: table;
 }
+tr {
+  white-space:nowrap;
+  width:237px;
+  vertical-align:top;
+}
 nav {
 	margin-bottom: 20px !important;
 }
@@ -168,7 +173,8 @@ input {
   padding: 0;
 }
 .productos_lista {
-  width: 214px;
+  width: 210px;
+  height: 337px;
   border-radius: 5px;
   border: 2px solid #fff;
   float: left;
@@ -205,7 +211,7 @@ input {
   min-height: 500px;
 }
 .tope {
-  max-height: 200px;
+  max-height: 300px;
 }
 .detalles p{
   font-size: 30px;

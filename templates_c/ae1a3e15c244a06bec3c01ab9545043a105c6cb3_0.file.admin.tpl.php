@@ -1,7 +1,7 @@
-<?php /* Smarty version 3.1.27, created on 2015-09-26 06:03:50
+<?php /* Smarty version 3.1.27, created on 2015-09-26 08:25:14
          compiled from "/opt/lampp/htdocs/datacom/templates/admin.tpl" */ ?>
 <?php
-/*%%SmartyHeaderCode:1811931396560619263ebb02_95326834%%*/
+/*%%SmartyHeaderCode:129443736856063a4ab346a9_21229566%%*/
 if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
   'file_dependency' => 
@@ -9,11 +9,11 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     'ae1a3e15c244a06bec3c01ab9545043a105c6cb3' => 
     array (
       0 => '/opt/lampp/htdocs/datacom/templates/admin.tpl',
-      1 => 1443240217,
+      1 => 1443248706,
       2 => 'file',
     ),
   ),
-  'nocache_hash' => '1811931396560619263ebb02_95326834',
+  'nocache_hash' => '129443736856063a4ab346a9_21229566',
   'variables' => 
   array (
     'productos' => 0,
@@ -23,13 +23,13 @@ $_valid = $_smarty_tpl->decodeProperties(array (
   ),
   'has_nocache_code' => false,
   'version' => '3.1.27',
-  'unifunc' => 'content_560619265026d1_62940824',
+  'unifunc' => 'content_56063a4ac47752_49104495',
 ),false);
 /*/%%SmartyHeaderCode%%*/
-if ($_valid && !is_callable('content_560619265026d1_62940824')) {
-function content_560619265026d1_62940824 ($_smarty_tpl) {
+if ($_valid && !is_callable('content_56063a4ac47752_49104495')) {
+function content_56063a4ac47752_49104495 ($_smarty_tpl) {
 
-$_smarty_tpl->properties['nocache_hash'] = '1811931396560619263ebb02_95326834';
+$_smarty_tpl->properties['nocache_hash'] = '129443736856063a4ab346a9_21229566';
 ?>
 <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 textos detalles">
 	<h1>Administrador</h1>
@@ -159,15 +159,15 @@ $_smarty_tpl->tpl_vars['categoria'] = $foreach_categoria_Sav;
 				<?php } else { ?>
 					<option value="0">No hay Categorias</option>
 			    <?php }?>
-			</select>
-			<label>Nombre</label>
+			</select></br>
+			<label>Nombre:</label>
 			<textarea id="nombreProducto" name="nombreProducto" rows="1" cols="20"></textarea>
 			<label>Descripcion:</label>
 			<textarea id="textoDescripcion" name="textoDescripcion" rows="3" cols="20"></textarea>
 			<label>Precio:</label>
 			<input id="precio" name="precio" type="text" size="5">
 			<label>Ruta Imagen:</label>
-			<input type="file">
+			<input type="file" id="imagen" name="imagen">
 			<input type="submit" value="Agregar">
 		</div>
 	</form>

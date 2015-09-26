@@ -62,6 +62,10 @@
 		$consulta = $this->db->prepare('SELECT * FROM producto');
 		$consulta->execute();
 		while ($producto = $consulta->fetch()){
+			$consultaNombre = $this->db->prepare('SELECT nombre_categoria FROM categoria WHERE id_categoria=?');
+			$consultaNombre->execute(array($producto['id_categoria']));
+			$nombreCategoria = $consultaNombre->fetch();
+			$producto['nombreCategoria'] = $nombreCategoria['nombre_categoria'];
 			$productos[] = $producto;
 		}
 		return $productos;

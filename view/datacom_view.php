@@ -30,7 +30,8 @@
 		public function mostrarLista(){
 			$this->smarty->display('templates/precios.tpl');
 		}
-		public function mostrarProductos(){
+		public function mostrarProductos($productos){
+			$this->smarty->assign('productos', $productos);
 			$this->smarty->display('templates/productos.tpl');
 		}
 		public function mostrarAdmin($categorias, $productos){

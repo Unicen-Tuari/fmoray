@@ -1,7 +1,7 @@
-<?php /* Smarty version 3.1.27, created on 2015-09-25 22:36:59
+<?php /* Smarty version 3.1.27, created on 2015-09-26 07:59:10
          compiled from "/opt/lampp/htdocs/datacom/templates/productos.tpl" */ ?>
 <?php
-/*%%SmartyHeaderCode:18820965065605b06b17bbf5_26826855%%*/
+/*%%SmartyHeaderCode:11217947615606342ea658d9_91959418%%*/
 if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
   'file_dependency' => 
@@ -9,20 +9,25 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     '5995d1ae1e01998b1c27fe67a1027198f6ab35be' => 
     array (
       0 => '/opt/lampp/htdocs/datacom/templates/productos.tpl',
-      1 => 1443127060,
+      1 => 1443247012,
       2 => 'file',
     ),
   ),
-  'nocache_hash' => '18820965065605b06b17bbf5_26826855',
+  'nocache_hash' => '11217947615606342ea658d9_91959418',
+  'variables' => 
+  array (
+    'productos' => 0,
+    'producto' => 0,
+  ),
   'has_nocache_code' => false,
   'version' => '3.1.27',
-  'unifunc' => 'content_5605b06b29f283_22062299',
+  'unifunc' => 'content_5606342eb36b22_65097689',
 ),false);
 /*/%%SmartyHeaderCode%%*/
-if ($_valid && !is_callable('content_5605b06b29f283_22062299')) {
-function content_5605b06b29f283_22062299 ($_smarty_tpl) {
+if ($_valid && !is_callable('content_5606342eb36b22_65097689')) {
+function content_5606342eb36b22_65097689 ($_smarty_tpl) {
 
-$_smarty_tpl->properties['nocache_hash'] = '18820965065605b06b17bbf5_26826855';
+$_smarty_tpl->properties['nocache_hash'] = '11217947615606342ea658d9_91959418';
 ?>
 <div class="col-lg-3 col-md-3 col-sm-12 textos">
 	<h1>Productos</h1>
@@ -42,213 +47,38 @@ $_smarty_tpl->properties['nocache_hash'] = '18820965065605b06b17bbf5_26826855';
 	</ul>
 </div>
 <div class="col-lg-8 col-lg-offset-1 col-md-8 col-md-offset-1 col-sm-12 col-xs-12 textos alto">
+	<?php if (!empty($_smarty_tpl->tpl_vars['productos']->value)) {?>
+	<?php
+$_from = $_smarty_tpl->tpl_vars['productos']->value;
+if (!is_array($_from) && !is_object($_from)) {
+settype($_from, 'array');
+}
+$_smarty_tpl->tpl_vars['producto'] = new Smarty_Variable;
+$_smarty_tpl->tpl_vars['producto']->_loop = false;
+foreach ($_from as $_smarty_tpl->tpl_vars['producto']->value) {
+$_smarty_tpl->tpl_vars['producto']->_loop = true;
+$foreach_producto_Sav = $_smarty_tpl->tpl_vars['producto'];
+?>
 	<div class="productos_lista">
 		<div>
 			<div>
-				<img src="img/mouse1.png" alt="">
-				<h5>Mouse Inalambrico Genius Traveler 6000x Optico</h5>
-				<p><span class="resaltar">$ 134,99</span><br />o 12 cuotas de <span class="resaltar">$ 17,21</span></p>
+				<h5><?php echo $_smarty_tpl->tpl_vars['producto']->value['nombreCategoria'];?>
+</h5>
+				<img src="<?php echo $_smarty_tpl->tpl_vars['producto']->value['ruta_imagen'];?>
+" alt="">
+				<h5><?php echo $_smarty_tpl->tpl_vars['producto']->value['nombre'];?>
+</h5>
+				<p><span class="resaltar">$<?php echo $_smarty_tpl->tpl_vars['producto']->value['precio'];?>
+</span><br />o 12 cuotas de <span class="resaltar">$<?php echo $_smarty_tpl->tpl_vars['producto']->value['precio']/12;?>
+</span></p>
 			</div>
 		</div>
 	</div>
-	<div class="productos_lista">
-		<div>
-			<div>
-				<img src="img/mouse2.png" alt="">
-				<h5>Mouse Gamer Steelseries Rivals 6500 Dpi 6 Botones</h5>
-				<p><span class="resaltar">$ 870,00</span><br />o 12 cuotas de <span class="resaltar">$ 110,92</span></p>
-			</div>
-		</div>
-	</div>
-	<div class="productos_lista">
-		<div>
-			<div>
-				<img src="img/mouse3.png" alt="">
-				<h5>Mouse Genius Gx Maurus X 4000dpi Macro Vikinborg</h5>
-				<p><span class="resaltar">$ 569,99</span><br />o 12 cuotas de <span class="resaltar">$ 72,67</span></p>
-			</div>
-		</div>
-	</div>
-	<div class="productos_lista">
-		<div>
-			<div>
-				<img src="img/parl1.png" alt="">
-				<h5>Parlantes 2.0 Con 4 Puertos Usb Edifier M20 Dts Gris</h5>
-				<p><span class="resaltar">$ 1.219,00</span><br />o 12 cuotas de <span class="resaltar">$ 155,41</span></p>
-			</div>
-		</div>
-	</div>
-	<div class="productos_lista">
-		<div>
-			<div>
-				<img src="img/parl2.png" alt="">
-				<h5>Parlantes De Madera Genius Usb Sp-hf150 Hf150</h5>
-				<p><span class="resaltar">$ 129,99</span><br />o 12 cuotas de <span class="resaltar">$ 16,57</span></p>
-			</div>
-		</div>
-	</div>
-	<div class="productos_lista">
-		<div>
-			<div>
-				<img src="img/tec1.png" alt="">
-				<h5>Teclado Logitech Wireless Touch Pad Keyboard K400</h5>
-				<p><span class="resaltar">$ 429,00</span><br />o 12 cuotas de <span class="resaltar">$ 54,69</span></p>
-			</div>
-		</div>
-	</div>
-	<div class="productos_lista">
-		<div>
-			<div>
-				<img src="img/tec2.png" alt="">
-				<h5>Teclado Noganet Multimedia Nkb-350a Retroiluminado</h5>
-				<p><span class="resaltar">$ 229,90</span><br />o 12 cuotas de <span class="resaltar">$ 29,31</span></p>
-			</div>
-		</div>
-	</div>
-	<div class="productos_lista">
-		<div>
-			<div>
-				<img src="img/pc1.png" alt="">
-				<h5>Impresora Laser Hp P 1102w Inalambrica</h5>
-				<p><span class="resaltar">$ 1.799,00</span><br />o 12 cuotas de <span class="resaltar">$ 229,36</span></p>
-			</div>
-		</div>
-	</div>
-	<div class="productos_lista">
-		<div>
-			<div>
-				<img src="img/pc2.png" alt="">
-				<h5>Impresora Laser Hp P 1102w Inalambrica</h5>
-				<p><span class="resaltar">$ 1.799,00</span><br />o 12 cuotas de <span class="resaltar">$ 229,36</span></p>
-			</div>
-		</div>
-	</div>
-		<div class="productos_lista">
-		<div>
-			<div>
-				<img src="img/pc3.png" alt="">
-				<h5>Impresora Laser Hp P 1102w Inalambrica</h5>
-				<p><span class="resaltar">$ 1.799,00</span><br />o 12 cuotas de <span class="resaltar">$ 229,36</span></p>
-			</div>
-		</div>
-	</div>
-	<div class="productos_lista">
-		<div>
-			<div>
-				<img src="img/note1.png" alt="">
-				<h5>Impresora Laser Hp P 1102w Inalambrica</h5>
-				<p><span class="resaltar">$ 1.799,00</span><br />o 12 cuotas de <span class="resaltar">$ 229,36</span></p>
-			</div>
-		</div>
-	</div>
-		<div class="productos_lista">
-		<div>
-			<div>
-				<img src="img/note2.png" alt="">
-				<h5>Impresora Laser Hp P 1102w Inalambrica</h5>
-				<p><span class="resaltar">$ 1.799,00</span><br />o 12 cuotas de <span class="resaltar">$ 229,36</span></p>
-			</div>
-		</div>
-	</div>
-	<div class="productos_lista">
-		<div>
-			<div>
-				<img src="img/tablet.png" alt="">
-				<h5>Impresora Laser Hp P 1102w Inalambrica</h5>
-				<p><span class="resaltar">$ 1.799,00</span><br />o 12 cuotas de <span class="resaltar">$ 229,36</span></p>
-			</div>
-		</div>
-	</div>
-	<div class="productos_lista">
-		<div>
-			<div>
-				<img src="img/impr1.png" alt="">
-				<h5>Impresora Laser Hp P 1102w Inalambrica</h5>
-				<p><span class="resaltar">$ 1.799,00</span><br />o 12 cuotas de <span class="resaltar">$ 229,36</span></p>
-			</div>
-		</div>
-	</div>
-		<div class="productos_lista">
-		<div>
-			<div>
-				<img src="img/impr2.png" alt="">
-				<h5>Impresora Laser Hp P 1102w Inalambrica</h5>
-				<p><span class="resaltar">$ 1.799,00</span><br />o 12 cuotas de <span class="resaltar">$ 229,36</span></p>
-			</div>
-		</div>
-	</div>
-	<div class="productos_lista">
-		<div>
-			<div>
-				<img src="img/mem1.png" alt="">
-				<h5>Impresora Laser Hp P 1102w Inalambrica</h5>
-				<p><span class="resaltar">$ 1.799,00</span><br />o 12 cuotas de <span class="resaltar">$ 229,36</span></p>
-			</div>
-		</div>
-	</div>
-		<div class="productos_lista">
-		<div>
-			<div>
-				<img src="img/mem2.png" alt="">
-				<h5>Impresora Laser Hp P 1102w Inalambrica</h5>
-				<p><span class="resaltar">$ 1.799,00</span><br />o 12 cuotas de <span class="resaltar">$ 229,36</span></p>
-			</div>
-		</div>
-	</div>
-	<div class="productos_lista">
-		<div>
-			<div>
-				<img src="img/mem3.png" alt="">
-				<h5>Impresora Laser Hp P 1102w Inalambrica</h5>
-				<p><span class="resaltar">$ 1.799,00</span><br />o 12 cuotas de <span class="resaltar">$ 229,36</span></p>
-			</div>
-		</div>
-	</div>
-		<div class="productos_lista">
-		<div>
-			<div>
-				<img src="img/disc1.png" alt="">
-				<h5>Impresora Laser Hp P 1102w Inalambrica</h5>
-				<p><span class="resaltar">$ 1.799,00</span><br />o 12 cuotas de <span class="resaltar">$ 229,36</span></p>
-			</div>
-		</div>
-	</div>
-	<div class="productos_lista">
-		<div>
-			<div>
-				<img src="img/disc2.png" alt="">
-				<h5>Impresora Laser Hp P 1102w Inalambrica</h5>
-				<p><span class="resaltar">$ 1.799,00</span><br />o 12 cuotas de <span class="resaltar">$ 229,36</span></p>
-			</div>
-		</div>
-	</div>
-	<div class="productos_lista">
-		<div>
-			<div>
-				<img src="img/rout1.png" alt="">
-				<h5>Impresora Laser Hp P 1102w Inalambrica</h5>
-				<p><span class="resaltar">$ 1.799,00</span><br />o 12 cuotas de <span class="resaltar">$ 229,36</span></p>
-			</div>
-		</div>
-	</div>
-	<div class="productos_lista">
-		<div>
-			<div>
-				<img src="img/rout2.png" alt="">
-				<h5>Impresora Laser Hp P 1102w Inalambrica</h5>
-				<p><span class="resaltar">$ 1.799,00</span><br />o 12 cuotas de <span class="resaltar">$ 229,36</span></p>
-			</div>
-		</div>
-	</div>
-		<div class="productos_lista">
-		<div>
-			<div>
-				<img src="img/swit1.png" alt="">
-				<h5>Impresora Laser Hp P 1102w Inalambrica</h5>
-				<p><span class="resaltar">$ 1.799,00</span><br />o 12 cuotas de <span class="resaltar">$ 229,36</span></p>
-			</div>
-		</div>
-	</div>
+	<?php
+$_smarty_tpl->tpl_vars['producto'] = $foreach_producto_Sav;
+}
+?>
+	<?php }?>
 </div>
 <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
 	<div class="modal-dialog">

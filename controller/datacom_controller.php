@@ -34,7 +34,7 @@
 			$this->view->mostrarLista();
 		}
 		public function mostrarProductos(){
-			$this->view->mostrarProductos();
+			$this->view->mostrarProductos($this->model->leerProducto());
 		}
 		public function mostrarAdmin(){
 			$this->view->mostrarAdmin($this->model->leerCategoria(), $this->model->leerProducto());
@@ -42,7 +42,7 @@
 		public function agregarCategoria(){
 			if(isset($_REQUEST['categoria'])){
 				$this->model->agregarCategoria($_REQUEST['categoria']);	
-				$this->mostrarHome();
+				header('Location: index.php');
 			}
 		}
 		public function agregarProducto(){
@@ -51,7 +51,7 @@
 				isset($_REQUEST['textoDescripcion']) &&
 				isset($_REQUEST['precio'])){
 				$this->model->agregarProducto($_REQUEST['idCategoria'], $_REQUEST['nombreProducto'], $_REQUEST['textoDescripcion'], $_REQUEST['precio']);	
-				$this->mostrarHome();	
+				header('Location: index.php');
 			}
 		}
 	}

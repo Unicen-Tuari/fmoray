@@ -77,15 +77,15 @@
 				{else}
 					<option value="0">No hay Categorias</option>
 			    {/if}
-			</select>
-			<label>Nombre</label>
+			</select></br>
+			<label>Nombre:</label>
 			<textarea id="nombreProducto" name="nombreProducto" rows="1" cols="20"></textarea>
 			<label>Descripcion:</label>
 			<textarea id="textoDescripcion" name="textoDescripcion" rows="3" cols="20"></textarea>
 			<label>Precio:</label>
 			<input id="precio" name="precio" type="text" size="5">
 			<label>Ruta Imagen:</label>
-			<input type="file">
+			<input type="file" id="imagen" name="imagen">
 			<input type="submit" value="Agregar">
 		</div>
 	</form>
