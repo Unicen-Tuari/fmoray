@@ -1,7 +1,7 @@
-<?php /* Smarty version 3.1.27, created on 2015-09-26 00:42:54
+<?php /* Smarty version 3.1.27, created on 2015-09-26 06:03:50
          compiled from "/opt/lampp/htdocs/datacom/templates/admin.tpl" */ ?>
 <?php
-/*%%SmartyHeaderCode:11983890155605cdeee5c796_64357874%%*/
+/*%%SmartyHeaderCode:1811931396560619263ebb02_95326834%%*/
 if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
   'file_dependency' => 
@@ -9,25 +9,27 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     'ae1a3e15c244a06bec3c01ab9545043a105c6cb3' => 
     array (
       0 => '/opt/lampp/htdocs/datacom/templates/admin.tpl',
-      1 => 1443220899,
+      1 => 1443240217,
       2 => 'file',
     ),
   ),
-  'nocache_hash' => '11983890155605cdeee5c796_64357874',
+  'nocache_hash' => '1811931396560619263ebb02_95326834',
   'variables' => 
   array (
+    'productos' => 0,
+    'producto' => 0,
     'categorias' => 0,
     'categoria' => 0,
   ),
   'has_nocache_code' => false,
   'version' => '3.1.27',
-  'unifunc' => 'content_5605cdeef1f1d3_57565408',
+  'unifunc' => 'content_560619265026d1_62940824',
 ),false);
 /*/%%SmartyHeaderCode%%*/
-if ($_valid && !is_callable('content_5605cdeef1f1d3_57565408')) {
-function content_5605cdeef1f1d3_57565408 ($_smarty_tpl) {
+if ($_valid && !is_callable('content_560619265026d1_62940824')) {
+function content_560619265026d1_62940824 ($_smarty_tpl) {
 
-$_smarty_tpl->properties['nocache_hash'] = '11983890155605cdeee5c796_64357874';
+$_smarty_tpl->properties['nocache_hash'] = '1811931396560619263ebb02_95326834';
 ?>
 <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 textos detalles">
 	<h1>Administrador</h1>
@@ -38,47 +40,53 @@ $_smarty_tpl->properties['nocache_hash'] = '11983890155605cdeee5c796_64357874';
 		      <tr>
 		         <th>Id Producto</th>
 		         <th>Id Categoria</th>
+		         <th>Nombre</th>
 		         <th>Descripcion</th>
 		         <th>Precio</th>
 		         <th>Ruta Imagen</th>
 		      </tr>
    			</thead>
 		    <tbody>
-		      <tr>
-		         <td>Tanmay</td>
-		         <td>Bangalore</td>
-		         <td>Tanmay</td>
-		         <td>Bangalore</td>
-		         <td>Tanmay</td>
-		      </tr>
-		      <tr>
-		         <td>Mumbai</td>
-		         <td>Sachin</td>
-		         <td>Mumbai</td>
-		         <td>Sachin</td>
-		         <td>Mumbai</td>
-		      </tr>
-		      <tr>
-		         <td>Mumbai</td>
-		         <td>Sachin</td>
-		         <td>Mumbai</td>
-		         <td>Sachin</td>
-		         <td>Mumbai</td>
-		      </tr>
-		      <tr>
-		         <td>Mumbai</td>
-		         <td>Sachin</td>
-		         <td>Mumbai</td>
-		         <td>Sachin</td>
-		         <td>Mumbai</td>
-		      </tr>
-		      <tr>
-		         <td>Mumbai</td>
-		         <td>Sachin</td>
-		         <td>Mumbai</td>
-		         <td>Sachin</td>
-		         <td>Mumbai</td>
-		      </tr>
+		    	<?php if (!empty($_smarty_tpl->tpl_vars['productos']->value)) {?>
+		   		<?php
+$_from = $_smarty_tpl->tpl_vars['productos']->value;
+if (!is_array($_from) && !is_object($_from)) {
+settype($_from, 'array');
+}
+$_smarty_tpl->tpl_vars['producto'] = new Smarty_Variable;
+$_smarty_tpl->tpl_vars['producto']->_loop = false;
+foreach ($_from as $_smarty_tpl->tpl_vars['producto']->value) {
+$_smarty_tpl->tpl_vars['producto']->_loop = true;
+$foreach_producto_Sav = $_smarty_tpl->tpl_vars['producto'];
+?>
+		    		<tr>
+		    			<td><?php echo $_smarty_tpl->tpl_vars['producto']->value['id_producto'];?>
+</td>
+		    			<td><?php echo $_smarty_tpl->tpl_vars['producto']->value['id_categoria'];?>
+</td>
+		    			<td><?php echo $_smarty_tpl->tpl_vars['producto']->value['nombre'];?>
+</td>
+		    			<td><?php echo $_smarty_tpl->tpl_vars['producto']->value['descripcion'];?>
+</td>
+		    			<td><?php echo $_smarty_tpl->tpl_vars['producto']->value['precio'];?>
+</td>
+		    			<td><?php echo $_smarty_tpl->tpl_vars['producto']->value['ruta_imagen'];?>
+</td>
+		    		</tr>
+		    	<?php
+$_smarty_tpl->tpl_vars['producto'] = $foreach_producto_Sav;
+}
+?>
+		    	<?php } else { ?>
+		    		<tr>
+		    			<td>No existe</td>
+		    			<td>No existe</td>
+		    			<td>No existe</td>
+		    			<td>No existe</td>
+		    			<td>No existe</td>
+		    			<td>No existe</td>
+		    		</tr>
+		    	<?php }?>
 		    </tbody>
 		</table>
 	</div>
@@ -92,6 +100,7 @@ $_smarty_tpl->properties['nocache_hash'] = '11983890155605cdeee5c796_64357874';
 		      	</tr>
    			</thead>
 		    <tbody>
+		    	<?php if (!empty($_smarty_tpl->tpl_vars['categorias']->value)) {?>
 		    	<?php
 $_from = $_smarty_tpl->tpl_vars['categorias']->value;
 if (!is_array($_from) && !is_object($_from)) {
@@ -113,24 +122,54 @@ $foreach_categoria_Sav = $_smarty_tpl->tpl_vars['categoria'];
 $_smarty_tpl->tpl_vars['categoria'] = $foreach_categoria_Sav;
 }
 ?>
+		    	<?php } else { ?>
+		    		<tr>
+		    			<td>No existe</td>
+		    			<td>No existe</td>
+		    		</tr>
+		    	<?php }?>
 		    </tbody>
 		</table>
 	</div>
-	<form action="">
-	<div class="bordes col-lg-offset-2 col-lg-3">
-		<h6>Agregar Producto</h6>
-		<label>Categoria:</label>
-		<select id="tinta" name="tinta">
-		   <option value="0">Elige una Categoria</option>
-		</select>
-		<label>Descripcion:</label>
-		<textarea rows="3" cols="20"></textarea>
-		<label>Precio:</label>
-		<input type="text" size="5">
-		<label>Ruta Imagen:</label>
-		<input type="file">
-		<input type="button" value="Agregar">
-	</div>
+	<form action="index.php?action=productoNuevo" method="POST" enctype="multipart/form-data">
+		<div class="bordes col-lg-offset-2 col-lg-3">
+			<h6>Agregar Producto</h6>
+			<label>Categoria:</label>
+			<select id="idCategoria" name="idCategoria">	
+			    <?php if (!empty($_smarty_tpl->tpl_vars['categorias']->value)) {?>
+			    	<option value="0">Elige una Categoria</option>
+				    <?php
+$_from = $_smarty_tpl->tpl_vars['categorias']->value;
+if (!is_array($_from) && !is_object($_from)) {
+settype($_from, 'array');
+}
+$_smarty_tpl->tpl_vars['categoria'] = new Smarty_Variable;
+$_smarty_tpl->tpl_vars['categoria']->_loop = false;
+foreach ($_from as $_smarty_tpl->tpl_vars['categoria']->value) {
+$_smarty_tpl->tpl_vars['categoria']->_loop = true;
+$foreach_categoria_Sav = $_smarty_tpl->tpl_vars['categoria'];
+?>
+						<option value="<?php echo $_smarty_tpl->tpl_vars['categoria']->value['id_categoria'];?>
+"><?php echo $_smarty_tpl->tpl_vars['categoria']->value['nombre_categoria'];?>
+</option>
+				    <?php
+$_smarty_tpl->tpl_vars['categoria'] = $foreach_categoria_Sav;
+}
+?>
+				<?php } else { ?>
+					<option value="0">No hay Categorias</option>
+			    <?php }?>
+			</select>
+			<label>Nombre</label>
+			<textarea id="nombreProducto" name="nombreProducto" rows="1" cols="20"></textarea>
+			<label>Descripcion:</label>
+			<textarea id="textoDescripcion" name="textoDescripcion" rows="3" cols="20"></textarea>
+			<label>Precio:</label>
+			<input id="precio" name="precio" type="text" size="5">
+			<label>Ruta Imagen:</label>
+			<input type="file">
+			<input type="submit" value="Agregar">
+		</div>
 	</form>
 	<form action="index.php?action=categoriaNueva" method="POST" enctype="multipart/form-data">
 		<div class="form-group bordes col-lg-offset-2 col-lg-3">

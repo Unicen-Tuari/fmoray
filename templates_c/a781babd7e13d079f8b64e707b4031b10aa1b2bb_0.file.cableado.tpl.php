@@ -1,7 +1,7 @@
-<?php /* Smarty version 3.1.27, created on 2015-09-17 01:27:21
+<?php /* Smarty version 3.1.27, created on 2015-09-26 04:22:29
          compiled from "/opt/lampp/htdocs/datacom/templates/cableado.tpl" */ ?>
 <?php
-/*%%SmartyHeaderCode:78905807955f9fad964a670_05604695%%*/
+/*%%SmartyHeaderCode:1141983031560601658487a5_60771471%%*/
 if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
   'file_dependency' => 
@@ -13,16 +13,16 @@ $_valid = $_smarty_tpl->decodeProperties(array (
       2 => 'file',
     ),
   ),
-  'nocache_hash' => '78905807955f9fad964a670_05604695',
+  'nocache_hash' => '1141983031560601658487a5_60771471',
   'has_nocache_code' => false,
   'version' => '3.1.27',
-  'unifunc' => 'content_55f9fad972ec18_79612080',
+  'unifunc' => 'content_560601658fc273_99170714',
 ),false);
 /*/%%SmartyHeaderCode%%*/
-if ($_valid && !is_callable('content_55f9fad972ec18_79612080')) {
-function content_55f9fad972ec18_79612080 ($_smarty_tpl) {
+if ($_valid && !is_callable('content_560601658fc273_99170714')) {
+function content_560601658fc273_99170714 ($_smarty_tpl) {
 
-$_smarty_tpl->properties['nocache_hash'] = '78905807955f9fad964a670_05604695';
+$_smarty_tpl->properties['nocache_hash'] = '1141983031560601658487a5_60771471';
 ?>
 <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 textos detalles">
 	<h1>Cableado e Instalacion de redes lan/wifi</h1>

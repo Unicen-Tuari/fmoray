@@ -27,7 +27,7 @@
 				<ul class="nav navbar-nav">
 					<li><a id="lnkPrincipal" href="#">Home<span class="sr-only">(current)</span></a></li>
 					<li class="dropdown">
-						<a href="#" class="dropdown-toggle" role="button" aria-expanded="false">Servicios<span class="caret"></span></a>
+						<a href="" class="dropdown-toggle" role="button" aria-expanded="false">Servicios<span class="caret"></span></a>
 						<ul class="dropdown-menu" role="menu">
 							<li><a id="lnkSoporteTecnico" href="#">Soporte Técnico</a></li>
 							<li><a id="lnkCableado" href="#">Redes lan/wifi</a></li>

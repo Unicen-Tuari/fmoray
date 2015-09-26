@@ -39,6 +39,9 @@
 			case ConfigApp::$ACTION_AGREGAR_CATEGORIA:
 				$datacomController->agregarCategoria();
 			break;
+			case ConfigApp::$ACTION_AGREGAR_PRODUCTO:
+				$datacomController->agregarProducto();
+			break;
 			default:
 			echo 'Pagina no existe';
 			break;

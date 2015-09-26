@@ -29,6 +29,24 @@
 		}
 	}
 
+	function agregarProducto($idCategoria, $nombreProducto, $textoDescripcion, $precio){
+		try{
+			$this->db->beginTransaction();
+			$consulta_existe = $this->db->prepare('SELECT 1 FROM producto WHERE nombre =?');
+			$consulta_existe->execute(array($nombreProducto));
+			if (!$consulta_existe->fetch()){
+				$consulta = $this->db->prepare('INSERT INTO producto(id_categoria, nombre, descripcion, precio) VALUES(?, ?, ?, ?)');
+				$consulta->execute(array($idCategoria, $nombreProducto, $textoDescripcion, $precio));
+				$this->db->commit();
+			}
+			
+		}
+		catch(Exception $e){
+			$this->db->rollBack();
+			// echo 'Excepción capturada: ',  $e->getMessage(), "\n";
+		}
+	}
+
 	function leerCategoria(){
 		$categorias = array();
 		$consulta = $this->db->prepare('SELECT * FROM categoria');
@@ -36,11 +54,17 @@
 		while ($categoria = $consulta->fetch()){
 			$categorias[] = $categoria;
 		}
-		if (!$categorias){
-			$categorias[0]['id_categoria'] = 'No existen categorias';
-			$categorias[0]['nombre_categoria'] = 'No existen categorias';
-		}
 		return $categorias;
+	}
+
+	function leerProducto(){
+		$productos = array();
+		$consulta = $this->db->prepare('SELECT * FROM producto');
+		$consulta->execute();
+		while ($producto = $consulta->fetch()){
+			$productos[] = $producto;
+		}
+		return $productos;
 	}
 }
 ?>

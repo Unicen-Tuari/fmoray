@@ -1,7 +1,7 @@
-<?php /* Smarty version 3.1.27, created on 2015-09-26 00:41:45
+<?php /* Smarty version 3.1.27, created on 2015-09-26 04:23:38
          compiled from "/opt/lampp/htdocs/datacom/templates/home.tpl" */ ?>
 <?php
-/*%%SmartyHeaderCode:8793981895605cda98bd4d9_15720398%%*/
+/*%%SmartyHeaderCode:304294642560601aab4dfd3_61442098%%*/
 if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
   'file_dependency' => 
@@ -9,20 +9,20 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     'ede3fbe5c3f8170940280f800d04444b1f05858b' => 
     array (
       0 => '/opt/lampp/htdocs/datacom/templates/home.tpl',
-      1 => 1443220903,
+      1 => 1443234211,
       2 => 'file',
     ),
   ),
-  'nocache_hash' => '8793981895605cda98bd4d9_15720398',
+  'nocache_hash' => '304294642560601aab4dfd3_61442098',
   'has_nocache_code' => false,
   'version' => '3.1.27',
-  'unifunc' => 'content_5605cda9a01a45_36767892',
+  'unifunc' => 'content_560601aac1a750_35865503',
 ),false);
 /*/%%SmartyHeaderCode%%*/
-if ($_valid && !is_callable('content_5605cda9a01a45_36767892')) {
-function content_5605cda9a01a45_36767892 ($_smarty_tpl) {
+if ($_valid && !is_callable('content_560601aac1a750_35865503')) {
+function content_560601aac1a750_35865503 ($_smarty_tpl) {
 
-$_smarty_tpl->properties['nocache_hash'] = '8793981895605cda98bd4d9_15720398';
+$_smarty_tpl->properties['nocache_hash'] = '304294642560601aab4dfd3_61442098';
 ?>
 <!DOCTYPE html>
 <html lang="es">
@@ -53,7 +53,7 @@ $_smarty_tpl->properties['nocache_hash'] = '8793981895605cda98bd4d9_15720398';
 				<ul class="nav navbar-nav">
 					<li><a id="lnkPrincipal" href="#">Home<span class="sr-only">(current)</span></a></li>
 					<li class="dropdown">
-						<a href="#" class="dropdown-toggle" role="button" aria-expanded="false">Servicios<span class="caret"></span></a>
+						<a href="" class="dropdown-toggle" role="button" aria-expanded="false">Servicios<span class="caret"></span></a>
 						<ul class="dropdown-menu" role="menu">
 							<li><a id="lnkSoporteTecnico" href="#">Soporte Técnico</a></li>
 							<li><a id="lnkCableado" href="#">Redes lan/wifi</a></li>
