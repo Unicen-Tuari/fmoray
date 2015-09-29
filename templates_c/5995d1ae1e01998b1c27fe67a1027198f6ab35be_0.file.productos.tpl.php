@@ -1,7 +1,7 @@
-<?php /* Smarty version 3.1.27, created on 2015-09-29 10:33:31
+<?php /* Smarty version 3.1.27, created on 2015-09-29 23:54:28
          compiled from "/opt/lampp/htdocs/datacom/templates/productos.tpl" */ ?>
 <?php
-/*%%SmartyHeaderCode:710618496560a4cdba83039_76461618%%*/
+/*%%SmartyHeaderCode:1678435996560b08940d1511_05164158%%*/
 if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
   'file_dependency' => 
@@ -9,11 +9,11 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     '5995d1ae1e01998b1c27fe67a1027198f6ab35be' => 
     array (
       0 => '/opt/lampp/htdocs/datacom/templates/productos.tpl',
-      1 => 1443515607,
+      1 => 1443515657,
       2 => 'file',
     ),
   ),
-  'nocache_hash' => '710618496560a4cdba83039_76461618',
+  'nocache_hash' => '1678435996560b08940d1511_05164158',
   'variables' => 
   array (
     'productos' => 0,
@@ -21,13 +21,13 @@ $_valid = $_smarty_tpl->decodeProperties(array (
   ),
   'has_nocache_code' => false,
   'version' => '3.1.27',
-  'unifunc' => 'content_560a4cdbb4dcf0_61065233',
+  'unifunc' => 'content_560b089423f347_36037024',
 ),false);
 /*/%%SmartyHeaderCode%%*/
-if ($_valid && !is_callable('content_560a4cdbb4dcf0_61065233')) {
-function content_560a4cdbb4dcf0_61065233 ($_smarty_tpl) {
+if ($_valid && !is_callable('content_560b089423f347_36037024')) {
+function content_560b089423f347_36037024 ($_smarty_tpl) {
 
-$_smarty_tpl->properties['nocache_hash'] = '710618496560a4cdba83039_76461618';
+$_smarty_tpl->properties['nocache_hash'] = '1678435996560b08940d1511_05164158';
 ?>
 <div class="col-lg-3 col-md-3 col-sm-12 textos">
 	<h1>Productos</h1>
@@ -64,8 +64,8 @@ $foreach_producto_Sav = $_smarty_tpl->tpl_vars['producto'];
 			<div>
 				<h5><?php echo $_smarty_tpl->tpl_vars['producto']->value['nombreCategoria'];?>
 </h5>
-				<span class="btnProducto"><img src="<?php echo $_smarty_tpl->tpl_vars['producto']->value['ruta_imagen'];?>
-" alt=""></span>
+				<img src="<?php echo $_smarty_tpl->tpl_vars['producto']->value['ruta_imagen'];?>
+" alt="">
 				<h5><?php echo $_smarty_tpl->tpl_vars['producto']->value['nombre'];?>
 </h5>
 				<p><span class="resaltar">$<?php echo $_smarty_tpl->tpl_vars['producto']->value['precio'];?>

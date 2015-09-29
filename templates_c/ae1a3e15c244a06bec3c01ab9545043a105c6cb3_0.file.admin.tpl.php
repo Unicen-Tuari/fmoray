@@ -1,7 +1,7 @@
-<?php /* Smarty version 3.1.27, created on 2015-09-29 11:01:35
+<?php /* Smarty version 3.1.27, created on 2015-09-30 01:25:03
          compiled from "/opt/lampp/htdocs/datacom/templates/admin.tpl" */ ?>
 <?php
-/*%%SmartyHeaderCode:1129357476560a536fe641a6_09890707%%*/
+/*%%SmartyHeaderCode:546675742560b1dcf1d9020_53317527%%*/
 if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
   'file_dependency' => 
@@ -9,11 +9,11 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     'ae1a3e15c244a06bec3c01ab9545043a105c6cb3' => 
     array (
       0 => '/opt/lampp/htdocs/datacom/templates/admin.tpl',
-      1 => 1443515445,
+      1 => 1443569090,
       2 => 'file',
     ),
   ),
-  'nocache_hash' => '1129357476560a536fe641a6_09890707',
+  'nocache_hash' => '546675742560b1dcf1d9020_53317527',
   'variables' => 
   array (
     'productos' => 0,
@@ -23,13 +23,13 @@ $_valid = $_smarty_tpl->decodeProperties(array (
   ),
   'has_nocache_code' => false,
   'version' => '3.1.27',
-  'unifunc' => 'content_560a5370054c28_94140873',
+  'unifunc' => 'content_560b1dcf31f469_80717967',
 ),false);
 /*/%%SmartyHeaderCode%%*/
-if ($_valid && !is_callable('content_560a5370054c28_94140873')) {
-function content_560a5370054c28_94140873 ($_smarty_tpl) {
+if ($_valid && !is_callable('content_560b1dcf31f469_80717967')) {
+function content_560b1dcf31f469_80717967 ($_smarty_tpl) {
 
-$_smarty_tpl->properties['nocache_hash'] = '1129357476560a536fe641a6_09890707';
+$_smarty_tpl->properties['nocache_hash'] = '546675742560b1dcf1d9020_53317527';
 ?>
 <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 textos detalles">
 	<h1>Administrador</h1>
@@ -64,7 +64,7 @@ $foreach_producto_Sav = $_smarty_tpl->tpl_vars['producto'];
 </td>
 		    			<td><?php echo $_smarty_tpl->tpl_vars['producto']->value['id_categoria'];?>
 </td>
-		    			<td class="fuentes"><?php echo $_smarty_tpl->tpl_vars['producto']->value['nombre'];?>
+		    			<td><?php echo $_smarty_tpl->tpl_vars['producto']->value['nombre'];?>
 </td>
 		    			<td class="fuentes"><?php echo $_smarty_tpl->tpl_vars['producto']->value['descripcion'];?>
 </td>
@@ -169,7 +169,7 @@ $_smarty_tpl->tpl_vars['categoria'] = $foreach_categoria_Sav;
 			<label>Precio:</label>
 			<input id="precio" name="precio" type="text" size="5">
 			<label for ="imagesToUpload">Ruta Imagen:</label>
-			<input class="input-file" type="file" id="imagesToUpload" name="imagesToUpload[]" multiple>
+			<input class="input-file" type="file" id="imagesToUpload" name="imagesToUpload[]">
 			<input type="submit" value="Agregar">
 		</div>
 	</form>
@@ -216,8 +216,9 @@ $_smarty_tpl->tpl_vars['categoria'] = $foreach_categoria_Sav;
 	</div>
 </div>
 <?php echo '<script'; ?>
- src="js/imgajax.js"><?php echo '</script'; ?>
+ type="text/javascript" src="js/imgajax.js"><?php echo '</script'; ?>
 >
+
 	
 <?php }
 }

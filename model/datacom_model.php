@@ -108,17 +108,22 @@
 	      $destinos_finales[] = $destino;
 	    }
 	    return $destinos_finales;
+	    
     }
 
 
   	function agregarImagenes($id_producto, $imagenes){
-	    $rutas=$this->subirImagenesAjax($imagenes);
-	    $consulta = $this->db->prepare('INSERT INTO imagen(fk_id_tarea,path) VALUES(?,?)');
-	    foreach($rutas as $ruta){
-	      $consulta->execute(array($id_tarea,$ruta));
+  		try{
+  			$this->db->beginTransaction();
+		    $rutas=$this->subirImagenesAjax($imagenes);
+		    $consulta = $this->db->prepare('UPDATE producto SET ruta_imagen = ? WHERE id_producto = ?');
+		    $consulta->execute(array($rutas[0],$id_producto));
+		    $this->db->commit();
 	    }
+	    catch(Exception $e){
+			$this->db->rollBack();
+			// echo 'Excepción capturada: ',  $e->getMessage(), "\n";
+		}
   	}
-
-  	
 }
 ?>

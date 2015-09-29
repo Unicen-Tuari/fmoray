@@ -19,7 +19,7 @@
 		    		<tr>
 		    			<td>{$producto.id_producto}</td>
 		    			<td>{$producto.id_categoria}</td>
-		    			<td class="fuentes">{$producto.nombre}</td>
+		    			<td>{$producto.nombre}</td>
 		    			<td class="fuentes">{$producto.descripcion}</td>
 		    			<td>{$producto.precio}</td>
 		    			<td>{$producto.ruta_imagen}
@@ -86,7 +86,7 @@
 			<label>Precio:</label>
 			<input id="precio" name="precio" type="text" size="5">
 			<label for ="imagesToUpload">Ruta Imagen:</label>
-			<input class="input-file" type="file" id="imagesToUpload" name="imagesToUpload[]" multiple>
+			<input class="input-file" type="file" id="imagesToUpload" name="imagesToUpload[]">
 			<input type="submit" value="Agregar">
 		</div>
 	</form>
@@ -132,5 +132,6 @@
 		</div>
 	</div>
 </div>
-<script src="js/imgajax.js"></script>
+<script type="text/javascript" src="js/imgajax.js"></script>
+
 	

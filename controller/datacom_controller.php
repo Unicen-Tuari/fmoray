@@ -59,7 +59,11 @@
 			}
 		}
 		function agregarImagenes(){
-		    if(isset($_REQUEST['id_producto']) && isset($_FILES)){
+			/*echo '<pre>';
+			print_r($_REQUEST);
+			print_r($_FILES);
+			echo '</pre>';*/
+		    if(isset($_REQUEST['id_producto']) && isset($_FILES[0]['name'])){
 		      $this->model->agregarImagenes($_REQUEST['id_producto'],$_FILES);
 		      echo '{ "result" :  "OK" }';
 		    }else{

@@ -1,32 +1,33 @@
 $(".botonAgregarImagenes").on("click", function(event){
         event.preventDefault();
-
         var archivos = $("#imagesToUpload").prop('files');
 
         if(typeof(archivos) == 'undefined'){
-          mostrarMensaje("No pusiste imagenes");
-          return;
+            alert("No pusiste imagenes");
+            return;
         }
 
         var datos = new FormData();
 
         $.each(archivos, function(key,value){
-          datos.append(key,value);
+            datos.append(key,value);
         });
-
+        
         $.ajax({
           type: "POST",
-          dataType: "json",
-          url: event.target.href,
           data: datos,
+          contentType : false,
+          processData : false,
+          url: event.target.href,
           success: function(data){
-            alert(data.result);
+            $("body").html(data);
           },
           error: function(){
-            alert("No anduvo la llamada AJAX");
-          },
-          contentType : false,
-          processData : false
+            alert('4');
+          }
+          
         });
 
 });
+
+// "index.php?action=agregarImagenes&id_producto={$producto['id_producto']}"
