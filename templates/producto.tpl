@@ -1,8 +1,13 @@
 <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 textos detalles">
-	<h1>Cableado e Instalacion de redes lan/wifi</h1>
-	<div><img src="img/network.jpg" alt=""></div>
-	<p>Le ofrecemos soluciones adaptadas a sus necesidades. Entre nuestras principales soluciones profesionales ofrecemos la logística, análisis e implementación de Redes Corporativas, Redes de Área Local (LAN), Redes Inalámbricas (Wireless) y las infraestructuras necesarias para configurar Redes Privadas Virtuales (VPN) en las empresas. Con las máximas garantías.</p>
+	{if !empty($producto)}
+		<h1>{$producto['nombreCategoria']}</h1>
+		<div><img src="{$producto.ruta_imagen}" alt=""></div>
+		<h3>{$producto.nombre}</h3>
+		<p>{$producto.descripcion}</p>
+		<p><span class="resaltar">${$producto.precio}</span><br />o 10 cuotas de <span class="resaltar">${$producto.precio / 10}</span></p>
+	{/if}
 </div>
+
 <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
 	<div class="modal-dialog">
 		<div class="modal-content  textmodal">

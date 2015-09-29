@@ -180,7 +180,8 @@ input {
   margin-top: 5px;
 }
 .productos_lista img {
-  width: 100%;
+  width: 206px;
+  height: 145px;
 }
 .resaltar {
   color: #CFB459;

@@ -1,56 +1,49 @@
-<?php /* Smarty version 3.1.27, created on 2015-09-17 01:59:50
-         compiled from "/opt/lampp/htdocs/datacom/templates/precios.tpl" */ ?>
+<?php /* Smarty version 3.1.27, created on 2015-09-29 08:44:13
+         compiled from "/opt/lampp/htdocs/datacom/templates/producto.tpl" */ ?>
 <?php
-/*%%SmartyHeaderCode:130084136655fa0276558c81_41308430%%*/
+/*%%SmartyHeaderCode:793708341560a333d046218_12809593%%*/
 if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
   'file_dependency' => 
   array (
-    'bef4bc98de78b1723d266efdad29429926c38d83' => 
+    '16ec624b9f1b9fec456eadb1bf618fa3a9f2754d' => 
     array (
-      0 => '/opt/lampp/htdocs/datacom/templates/precios.tpl',
-      1 => 1435178921,
+      0 => '/opt/lampp/htdocs/datacom/templates/producto.tpl',
+      1 => 1443509025,
       2 => 'file',
     ),
   ),
-  'nocache_hash' => '130084136655fa0276558c81_41308430',
+  'nocache_hash' => '793708341560a333d046218_12809593',
+  'variables' => 
+  array (
+    'producto' => 0,
+  ),
   'has_nocache_code' => false,
   'version' => '3.1.27',
-  'unifunc' => 'content_55fa027665a613_00382572',
+  'unifunc' => 'content_560a333d108620_75223082',
 ),false);
 /*/%%SmartyHeaderCode%%*/
-if ($_valid && !is_callable('content_55fa027665a613_00382572')) {
-function content_55fa027665a613_00382572 ($_smarty_tpl) {
+if ($_valid && !is_callable('content_560a333d108620_75223082')) {
+function content_560a333d108620_75223082 ($_smarty_tpl) {
 
-$_smarty_tpl->properties['nocache_hash'] = '130084136655fa0276558c81_41308430';
+$_smarty_tpl->properties['nocache_hash'] = '793708341560a333d046218_12809593';
 ?>
 <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 textos detalles">
-  	<h1>Lista de Precios</h1>
-	<div><img src="img/precios.jpg" alt=""></div>
-	<table class="table table-bordered table-responsive">
-		<thead class="colorTabla">
-			<tr class="centrar">
-				<th >Producto</th>
-				<th >Proceso</th>
-				<th >Precio</th>
-			</tr>
-		</thead>
-		<tbody id="infoTabla">
-			
-		</tbody>
-		<tfoot class="colorTabla">
-			<tr>
-				<td><input id="producto" type="text" class="form-control" placeholder="Ingrese producto..."></td>
-				<td><input id="proceso" type="text" class="form-control" placeholder="Ingrese proceso..."></td>
-				<td><input id="precio" type="text" class="form-control" placeholder="Ingrese precio..."></td>
-			</tr>
-		</tfoot>
-	</table>
-	<form name="formPass">
-		<input name="password" id="password" type="text" class="form-control" placeholder="Ingrese contraseña...">
-		<button id="btnAgregar"type="button" class="btn btn-default" >Agregar</button>
-	</form>
+	<?php if (!empty($_smarty_tpl->tpl_vars['producto']->value)) {?>
+		<h1><?php echo $_smarty_tpl->tpl_vars['producto']->value['nombreCategoria'];?>
+</h1>
+		<div><img src="<?php echo $_smarty_tpl->tpl_vars['producto']->value['ruta_imagen'];?>
+" alt=""></div>
+		<h3><?php echo $_smarty_tpl->tpl_vars['producto']->value['nombre'];?>
+</h3>
+		<p><?php echo $_smarty_tpl->tpl_vars['producto']->value['descripcion'];?>
+</p>
+		<p><span class="resaltar">$<?php echo $_smarty_tpl->tpl_vars['producto']->value['precio'];?>
+</span><br />o 10 cuotas de <span class="resaltar">$<?php echo $_smarty_tpl->tpl_vars['producto']->value['precio']/10;?>
+</span></p>
+	<?php }?>
 </div>
+
 <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
 	<div class="modal-dialog">
 		<div class="modal-content  textmodal">
@@ -82,9 +75,6 @@ $_smarty_tpl->properties['nocache_hash'] = '130084136655fa0276558c81_41308430';
 			</div>
 		</div>
 	</div>
-</div>
-<?php echo '<script'; ?>
- src="js/main.js"><?php echo '</script'; ?>
-><?php }
+</div><?php }
 }
 ?>

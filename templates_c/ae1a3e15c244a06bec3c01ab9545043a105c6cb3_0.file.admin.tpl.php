@@ -1,7 +1,7 @@
-<?php /* Smarty version 3.1.27, created on 2015-09-29 06:09:05
+<?php /* Smarty version 3.1.27, created on 2015-09-29 08:06:50
          compiled from "/opt/lampp/htdocs/datacom/templates/admin.tpl" */ ?>
 <?php
-/*%%SmartyHeaderCode:1048953071560a0ee1ec8c99_39192573%%*/
+/*%%SmartyHeaderCode:2047367359560a2a7a27d1e3_50501206%%*/
 if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
   'file_dependency' => 
@@ -9,11 +9,11 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     'ae1a3e15c244a06bec3c01ab9545043a105c6cb3' => 
     array (
       0 => '/opt/lampp/htdocs/datacom/templates/admin.tpl',
-      1 => 1443499735,
+      1 => 1443506038,
       2 => 'file',
     ),
   ),
-  'nocache_hash' => '1048953071560a0ee1ec8c99_39192573',
+  'nocache_hash' => '2047367359560a2a7a27d1e3_50501206',
   'variables' => 
   array (
     'productos' => 0,
@@ -23,13 +23,13 @@ $_valid = $_smarty_tpl->decodeProperties(array (
   ),
   'has_nocache_code' => false,
   'version' => '3.1.27',
-  'unifunc' => 'content_560a0ee20af591_43479462',
+  'unifunc' => 'content_560a2a7a3b7006_89875851',
 ),false);
 /*/%%SmartyHeaderCode%%*/
-if ($_valid && !is_callable('content_560a0ee20af591_43479462')) {
-function content_560a0ee20af591_43479462 ($_smarty_tpl) {
+if ($_valid && !is_callable('content_560a2a7a3b7006_89875851')) {
+function content_560a2a7a3b7006_89875851 ($_smarty_tpl) {
 
-$_smarty_tpl->properties['nocache_hash'] = '1048953071560a0ee1ec8c99_39192573';
+$_smarty_tpl->properties['nocache_hash'] = '2047367359560a2a7a27d1e3_50501206';
 ?>
 <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 textos detalles">
 	<h1>Administrador</h1>
@@ -214,6 +214,43 @@ $_smarty_tpl->tpl_vars['categoria'] = $foreach_categoria_Sav;
 			</div>
 		</div>
 	</div>
-</div><?php }
+</div>
+<?php echo '<script'; ?>
+>
+	
+$(".botonAgregarImagenes").on("click", function(event){
+        event.preventDefault();
+
+        var archivos = $("#imagesToUpload").prop('files');
+
+        if(typeof(archivos) == 'undefined'){
+          mostrarMensaje("No pusiste imagenes");
+          return;
+        }
+
+        var datos = new FormData();
+
+        $.each(archivos, function(key,value){
+          datos.append(key,value);
+        });
+
+        $.ajax({
+          type: "POST",
+          dataType: "json",
+          url: event.target.href,
+          data: datos,
+          success: function(data){
+            alert(data.result);
+          },
+          error: function(){
+            alert("No anduvo la llamada AJAX");
+          },
+          contentType : false,
+          processData : false
+        });
+
+});
+<?php echo '</script'; ?>
+><?php }
 }
 ?>

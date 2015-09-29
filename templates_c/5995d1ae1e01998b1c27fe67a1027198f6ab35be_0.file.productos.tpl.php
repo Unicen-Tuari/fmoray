@@ -1,7 +1,7 @@
-<?php /* Smarty version 3.1.27, created on 2015-09-29 05:56:36
+<?php /* Smarty version 3.1.27, created on 2015-09-29 08:40:50
          compiled from "/opt/lampp/htdocs/datacom/templates/productos.tpl" */ ?>
 <?php
-/*%%SmartyHeaderCode:931077335560a0bf4538243_89684977%%*/
+/*%%SmartyHeaderCode:821923858560a327211f079_47319093%%*/
 if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
   'file_dependency' => 
@@ -9,11 +9,11 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     '5995d1ae1e01998b1c27fe67a1027198f6ab35be' => 
     array (
       0 => '/opt/lampp/htdocs/datacom/templates/productos.tpl',
-      1 => 1443498992,
+      1 => 1443508842,
       2 => 'file',
     ),
   ),
-  'nocache_hash' => '931077335560a0bf4538243_89684977',
+  'nocache_hash' => '821923858560a327211f079_47319093',
   'variables' => 
   array (
     'productos' => 0,
@@ -21,13 +21,13 @@ $_valid = $_smarty_tpl->decodeProperties(array (
   ),
   'has_nocache_code' => false,
   'version' => '3.1.27',
-  'unifunc' => 'content_560a0bf4610110_64263051',
+  'unifunc' => 'content_560a32721eb3b7_85263948',
 ),false);
 /*/%%SmartyHeaderCode%%*/
-if ($_valid && !is_callable('content_560a0bf4610110_64263051')) {
-function content_560a0bf4610110_64263051 ($_smarty_tpl) {
+if ($_valid && !is_callable('content_560a32721eb3b7_85263948')) {
+function content_560a32721eb3b7_85263948 ($_smarty_tpl) {
 
-$_smarty_tpl->properties['nocache_hash'] = '931077335560a0bf4538243_89684977';
+$_smarty_tpl->properties['nocache_hash'] = '821923858560a327211f079_47319093';
 ?>
 <div class="col-lg-3 col-md-3 col-sm-12 textos">
 	<h1>Productos</h1>
@@ -69,9 +69,10 @@ $foreach_producto_Sav = $_smarty_tpl->tpl_vars['producto'];
 				<h5><?php echo $_smarty_tpl->tpl_vars['producto']->value['nombre'];?>
 </h5>
 				<p><span class="resaltar">$<?php echo $_smarty_tpl->tpl_vars['producto']->value['precio'];?>
-</span><br />o 12 cuotas de <span class="resaltar">$<?php echo $_smarty_tpl->tpl_vars['producto']->value['precio']/12;?>
+</span><br />o 10 cuotas de <span class="resaltar">$<?php echo $_smarty_tpl->tpl_vars['producto']->value['precio']/10;?>
 </span></p>
-				<button type="button" class="btn btn-default btn-sm">Mas...</button>
+				<button class="btn btn-default btnProducto" value="<?php echo $_smarty_tpl->tpl_vars['producto']->value['id_producto'];?>
+">Mas...</button>
 			</div>
 		</div>
 	</div>
@@ -114,7 +115,7 @@ $_smarty_tpl->tpl_vars['producto'] = $foreach_producto_Sav;
 	</div>
 </div>
 <?php echo '<script'; ?>
- src="js/main.js"><?php echo '</script'; ?>
+ src="js/prod.js"><?php echo '</script'; ?>
 ><?php }
 }
 ?>

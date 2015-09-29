@@ -37,7 +37,7 @@
 			$this->view->mostrarProductos($this->model->leerProducto());
 		}
 		public function verProducto(){
-			$this->view->verProductos();	
+			$this->view->verProducto($this->model->leerProductoInfo($_REQUEST['id']));	
 		}
 		public function mostrarAdmin(){
 			$this->view->mostrarAdmin($this->model->leerCategoria(), $this->model->leerProducto());

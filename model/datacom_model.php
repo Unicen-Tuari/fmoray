@@ -72,6 +72,19 @@
 		return $productos;
 	}
 
+	function leerProductoInfo($id){
+			$producto = array();
+			$nombreCategoria = '';
+			$consulta = $this->db->prepare('SELECT * FROM producto WHERE id_producto=?');
+			$consulta->execute(array($id));
+			$producto = $consulta->fetch();
+			$consultaCategoria = $this->db->prepare('SELECT nombre_categoria FROM categoria WHERE id_categoria=?');
+			$consultaCategoria->execute(array($producto['id_categoria']));
+			$nombreCategoria = $consultaCategoria->fetch();
+			$producto['nombreCategoria'] = $nombreCategoria['nombre_categoria'];
+			return $producto;
+	}
+
 
 	private function subirImagenes($imagenes){
 	    $carpeta = "uploads/";
@@ -103,5 +116,7 @@
 	      $consulta->execute(array($id_tarea,$ruta));
 	    }
   	}
+
+  	
 }
 ?>
