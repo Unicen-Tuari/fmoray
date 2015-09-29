@@ -179,6 +179,9 @@ input {
   margin-left: 3%;
   margin-top: 5px;
 }
+.btnProducto {
+  margin-right: 35%;
+}
 .productos_lista img {
   width: 206px;
   height: 145px;

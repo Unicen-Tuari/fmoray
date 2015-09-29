@@ -87,6 +87,7 @@
 
 
 	private function subirImagenes($imagenes){
+		if ($imagenes['name'][0] != ''){
 	    $carpeta = "uploads/";
 	    $destinos_finales = array();
 	    foreach ($imagenes["tmp_name"] as $key => $value) {
@@ -95,6 +96,7 @@
 	    }
 
 	    return $destinos_finales;
+		}
 	  }
 
 	private function subirImagenesAjax($imagenes){
