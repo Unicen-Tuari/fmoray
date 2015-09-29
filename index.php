@@ -33,6 +33,9 @@
 			case ConfigApp::$ACTION_PRODUCTOS:
 				$datacomController->mostrarProductos();
 			break;
+			case ConfigApp::$ACTION_VER_PRODUCTO:
+				$datacomController->verProducto();
+			break;
 			case ConfigApp::$ACTION_ADMIN:
 				$datacomController->mostrarAdmin();
 			break;
@@ -42,6 +45,9 @@
 			case ConfigApp::$ACTION_AGREGAR_PRODUCTO:
 				$datacomController->agregarProducto();
 			break;
+			case ConfigApp::$ACTION_AGREGAR_IMAGENES:
+			    $datacomController->agregarImagenes();
+			    break;
 			default:
 			echo 'Pagina no existe';
 			break;

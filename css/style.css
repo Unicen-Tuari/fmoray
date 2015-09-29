@@ -9,11 +9,6 @@ body{
   width: 100%;
   display: table;
 }
-tr {
-  white-space:nowrap;
-  width:237px;
-  vertical-align:top;
-}
 nav {
 	margin-bottom: 20px !important;
 }
@@ -140,6 +135,9 @@ input {
   max-width: 500px;
   max-height: 400px;
 }
+.fuentes {
+  font-size: 10px !important;
+}
 .copete {
   color: white;
   text-align: center;
@@ -174,7 +172,7 @@ input {
 }
 .productos_lista {
   width: 210px;
-  height: 337px;
+  height: 360px;
   border-radius: 5px;
   border: 2px solid #fff;
   float: left;
@@ -281,4 +279,8 @@ input {
 }
 .bordes h6 {
   text-align: center !important;
+}
+.bordes .input-file {
+  background-color: white !important;
+  width: 100%;
 }

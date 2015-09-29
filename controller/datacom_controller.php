@@ -36,9 +36,12 @@
 		public function mostrarProductos(){
 			$this->view->mostrarProductos($this->model->leerProducto());
 		}
+		public function verProducto(){
+			$this->view->verProductos();	
+		}
 		public function mostrarAdmin(){
 			$this->view->mostrarAdmin($this->model->leerCategoria(), $this->model->leerProducto());
-		}  
+		}
 		public function agregarCategoria(){
 			if(isset($_REQUEST['categoria'])){
 				$this->model->agregarCategoria($_REQUEST['categoria']);	
@@ -49,10 +52,20 @@
 			if  ($_REQUEST['idCategoria'] != 0 && 
 				isset($_REQUEST['nombreProducto']) &&
 				isset($_REQUEST['textoDescripcion']) &&
-				isset($_REQUEST['precio'])){
-				$this->model->agregarProducto($_REQUEST['idCategoria'], $_REQUEST['nombreProducto'], $_REQUEST['textoDescripcion'], $_REQUEST['precio']);	
+				isset($_REQUEST['precio']) &&
+				isset($_FILES['imagesToUpload'])){
+				$this->model->agregarProducto($_REQUEST['idCategoria'], $_REQUEST['nombreProducto'], $_REQUEST['textoDescripcion'], $_REQUEST['precio'], $_FILES['imagesToUpload']);	
 				header('Location: index.php');
 			}
 		}
-	}
+		function agregarImagenes(){
+		    if(isset($_REQUEST['id_producto']) && isset($_FILES)){
+		      $this->model->agregarImagenes($_REQUEST['id_producto'],$_FILES);
+		      echo '{ "result" :  "OK" }';
+		    }else{
+		      echo '{ "result" :  "Faltan paramentros" }';
+		    }
+		  }
+
+}
 ?>

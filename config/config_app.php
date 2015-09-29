@@ -9,9 +9,11 @@
 		public static $ACTION_CARTUCHOS = 'cartuchos';
 		public static $ACTION_LISTA = 'lista';
 		public static $ACTION_PRODUCTOS = 'productos';
+		public static $ACTION_VER_PRODUCTO = 'verProducto';
 		public static $ACTION_ADMIN = 'admin';
 		public static $ACTION_AGREGAR_CATEGORIA = 'categoriaNueva';
 		public static $ACTION_AGREGAR_PRODUCTO = 'productoNuevo';
+		public static $ACTION_AGREGAR_IMAGENES = 'agregarImagenes';
 	}
 
 

@@ -19,10 +19,11 @@
 		    		<tr>
 		    			<td>{$producto.id_producto}</td>
 		    			<td>{$producto.id_categoria}</td>
-		    			<td>{$producto.nombre}</td>
-		    			<td>{$producto.descripcion}</td>
+		    			<td class="fuentes">{$producto.nombre}</td>
+		    			<td class="fuentes">{$producto.descripcion}</td>
 		    			<td>{$producto.precio}</td>
-		    			<td>{$producto.ruta_imagen}</td>
+		    			<td>{$producto.ruta_imagen}
+		    			{if (!$producto.ruta_imagen)}<a class="glyphicon glyphicon-plus botonAgregarImagenes" href="index.php?action=agregarImagenes&id_producto={$producto['id_producto']}"></a>{/if}</td>
 		    		</tr>
 		    	{/foreach}
 		    	{else}
@@ -84,8 +85,8 @@
 			<textarea id="textoDescripcion" name="textoDescripcion" rows="3" cols="20"></textarea>
 			<label>Precio:</label>
 			<input id="precio" name="precio" type="text" size="5">
-			<label>Ruta Imagen:</label>
-			<input type="file" id="imagen" name="imagen">
+			<label for ="imagesToUpload">Ruta Imagen:</label>
+			<input class="input-file" type="file" id="imagesToUpload" name="imagesToUpload[]" multiple>
 			<input type="submit" value="Agregar">
 		</div>
 	</form>

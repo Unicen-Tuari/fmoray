@@ -34,6 +34,9 @@
 			$this->smarty->assign('productos', $productos);
 			$this->smarty->display('templates/productos.tpl');
 		}
+		public function verProducto(){
+			$this->smarty-display('templates/producto.tpl');
+		}
 		public function mostrarAdmin($categorias, $productos){
 			$this->smarty->assign('categorias', $categorias);
 			$this->smarty->assign('productos', $productos);

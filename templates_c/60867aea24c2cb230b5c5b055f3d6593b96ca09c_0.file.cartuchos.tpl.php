@@ -1,7 +1,7 @@
-<?php /* Smarty version 3.1.27, created on 2015-09-17 01:27:23
+<?php /* Smarty version 3.1.27, created on 2015-09-27 17:02:33
          compiled from "/opt/lampp/htdocs/datacom/templates/cartuchos.tpl" */ ?>
 <?php
-/*%%SmartyHeaderCode:83049202955f9fadbd29fd7_08295158%%*/
+/*%%SmartyHeaderCode:144972435956080509e3cee6_67944395%%*/
 if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
   'file_dependency' => 
@@ -13,16 +13,16 @@ $_valid = $_smarty_tpl->decodeProperties(array (
       2 => 'file',
     ),
   ),
-  'nocache_hash' => '83049202955f9fadbd29fd7_08295158',
+  'nocache_hash' => '144972435956080509e3cee6_67944395',
   'has_nocache_code' => false,
   'version' => '3.1.27',
-  'unifunc' => 'content_55f9fadbdd8899_55892550',
+  'unifunc' => 'content_56080509efc7b2_36852815',
 ),false);
 /*/%%SmartyHeaderCode%%*/
-if ($_valid && !is_callable('content_55f9fadbdd8899_55892550')) {
-function content_55f9fadbdd8899_55892550 ($_smarty_tpl) {
+if ($_valid && !is_callable('content_56080509efc7b2_36852815')) {
+function content_56080509efc7b2_36852815 ($_smarty_tpl) {
 
-$_smarty_tpl->properties['nocache_hash'] = '83049202955f9fadbd29fd7_08295158';
+$_smarty_tpl->properties['nocache_hash'] = '144972435956080509e3cee6_67944395';
 ?>
 <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 textos detalles">
 	<h1>Recarga de Cartuchos</h1>

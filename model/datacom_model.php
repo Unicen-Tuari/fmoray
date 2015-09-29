@@ -29,17 +29,18 @@
 		}
 	}
 
-	function agregarProducto($idCategoria, $nombreProducto, $textoDescripcion, $precio){
+	function agregarProducto($idCategoria, $nombreProducto, $textoDescripcion, $precio, $imagenes){
 		try{
+			$destinos_finales=$this->subirImagenes($imagenes);
 			$this->db->beginTransaction();
 			$consulta_existe = $this->db->prepare('SELECT 1 FROM producto WHERE nombre =?');
 			$consulta_existe->execute(array($nombreProducto));
 			if (!$consulta_existe->fetch()){
-				$consulta = $this->db->prepare('INSERT INTO producto(id_categoria, nombre, descripcion, precio) VALUES(?, ?, ?, ?)');
-				$consulta->execute(array($idCategoria, $nombreProducto, $textoDescripcion, $precio));
+				$consulta = $this->db->prepare('INSERT INTO producto(id_categoria, nombre, descripcion, precio, ruta_imagen) VALUES(?, ?, ?, ?, ?)');
+				$consulta->execute(array($idCategoria, $nombreProducto, $textoDescripcion, $precio, $destinos_finales[0]));
 				$this->db->commit();
 			}
-			
+
 		}
 		catch(Exception $e){
 			$this->db->rollBack();
@@ -70,5 +71,37 @@
 		}
 		return $productos;
 	}
+
+
+	private function subirImagenes($imagenes){
+	    $carpeta = "uploads/";
+	    $destinos_finales = array();
+	    foreach ($imagenes["tmp_name"] as $key => $value) {
+	      $destinos_finales[] = $carpeta.uniqid().$imagenes["name"][$key];
+	      move_uploaded_file($value, end($destinos_finales));
+	    }
+
+	    return $destinos_finales;
+	  }
+
+	private function subirImagenesAjax($imagenes){
+	    $carpeta = "uploads/";
+	    $destinos_finales = array();
+	    foreach ($imagenes as $imagen) {
+	      $destino =  $carpeta.uniqid().$imagen["name"];
+	      move_uploaded_file($imagen["tmp_name"], $destino);
+	      $destinos_finales[] = $destino;
+	    }
+	    return $destinos_finales;
+    }
+
+
+  	function agregarImagenes($id_producto, $imagenes){
+	    $rutas=$this->subirImagenesAjax($imagenes);
+	    $consulta = $this->db->prepare('INSERT INTO imagen(fk_id_tarea,path) VALUES(?,?)');
+	    foreach($rutas as $ruta){
+	      $consulta->execute(array($id_tarea,$ruta));
+	    }
+  	}
 }
 ?>

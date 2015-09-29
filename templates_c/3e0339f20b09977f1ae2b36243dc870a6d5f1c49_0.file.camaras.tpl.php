@@ -1,7 +1,7 @@
-<?php /* Smarty version 3.1.27, created on 2015-09-17 01:27:22
+<?php /* Smarty version 3.1.27, created on 2015-09-27 17:02:33
          compiled from "/opt/lampp/htdocs/datacom/templates/camaras.tpl" */ ?>
 <?php
-/*%%SmartyHeaderCode:19188408455f9fadab5af96_77560220%%*/
+/*%%SmartyHeaderCode:574814322560805092c5184_04838199%%*/
 if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
   'file_dependency' => 
@@ -13,16 +13,16 @@ $_valid = $_smarty_tpl->decodeProperties(array (
       2 => 'file',
     ),
   ),
-  'nocache_hash' => '19188408455f9fadab5af96_77560220',
+  'nocache_hash' => '574814322560805092c5184_04838199',
   'has_nocache_code' => false,
   'version' => '3.1.27',
-  'unifunc' => 'content_55f9fadabe4484_58279310',
+  'unifunc' => 'content_5608050957a084_92777859',
 ),false);
 /*/%%SmartyHeaderCode%%*/
-if ($_valid && !is_callable('content_55f9fadabe4484_58279310')) {
-function content_55f9fadabe4484_58279310 ($_smarty_tpl) {
+if ($_valid && !is_callable('content_5608050957a084_92777859')) {
+function content_5608050957a084_92777859 ($_smarty_tpl) {
 
-$_smarty_tpl->properties['nocache_hash'] = '19188408455f9fadab5af96_77560220';
+$_smarty_tpl->properties['nocache_hash'] = '574814322560805092c5184_04838199';
 ?>
 <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 textos detalles">
 	<h1>Reparacion de camaras digitales</h1>

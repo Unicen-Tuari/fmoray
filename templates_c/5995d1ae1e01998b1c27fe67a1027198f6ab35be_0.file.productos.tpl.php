@@ -1,7 +1,7 @@
-<?php /* Smarty version 3.1.27, created on 2015-09-26 07:59:10
+<?php /* Smarty version 3.1.27, created on 2015-09-29 05:56:36
          compiled from "/opt/lampp/htdocs/datacom/templates/productos.tpl" */ ?>
 <?php
-/*%%SmartyHeaderCode:11217947615606342ea658d9_91959418%%*/
+/*%%SmartyHeaderCode:931077335560a0bf4538243_89684977%%*/
 if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
   'file_dependency' => 
@@ -9,11 +9,11 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     '5995d1ae1e01998b1c27fe67a1027198f6ab35be' => 
     array (
       0 => '/opt/lampp/htdocs/datacom/templates/productos.tpl',
-      1 => 1443247012,
+      1 => 1443498992,
       2 => 'file',
     ),
   ),
-  'nocache_hash' => '11217947615606342ea658d9_91959418',
+  'nocache_hash' => '931077335560a0bf4538243_89684977',
   'variables' => 
   array (
     'productos' => 0,
@@ -21,13 +21,13 @@ $_valid = $_smarty_tpl->decodeProperties(array (
   ),
   'has_nocache_code' => false,
   'version' => '3.1.27',
-  'unifunc' => 'content_5606342eb36b22_65097689',
+  'unifunc' => 'content_560a0bf4610110_64263051',
 ),false);
 /*/%%SmartyHeaderCode%%*/
-if ($_valid && !is_callable('content_5606342eb36b22_65097689')) {
-function content_5606342eb36b22_65097689 ($_smarty_tpl) {
+if ($_valid && !is_callable('content_560a0bf4610110_64263051')) {
+function content_560a0bf4610110_64263051 ($_smarty_tpl) {
 
-$_smarty_tpl->properties['nocache_hash'] = '11217947615606342ea658d9_91959418';
+$_smarty_tpl->properties['nocache_hash'] = '931077335560a0bf4538243_89684977';
 ?>
 <div class="col-lg-3 col-md-3 col-sm-12 textos">
 	<h1>Productos</h1>
@@ -71,6 +71,7 @@ $foreach_producto_Sav = $_smarty_tpl->tpl_vars['producto'];
 				<p><span class="resaltar">$<?php echo $_smarty_tpl->tpl_vars['producto']->value['precio'];?>
 </span><br />o 12 cuotas de <span class="resaltar">$<?php echo $_smarty_tpl->tpl_vars['producto']->value['precio']/12;?>
 </span></p>
+				<button type="button" class="btn btn-default btn-sm">Mas...</button>
 			</div>
 		</div>
 	</div>
@@ -111,6 +112,9 @@ $_smarty_tpl->tpl_vars['producto'] = $foreach_producto_Sav;
 			</div>
 		</div>
 	</div>
-</div><?php }
+</div>
+<?php echo '<script'; ?>
+ src="js/main.js"><?php echo '</script'; ?>
+><?php }
 }
 ?>
