@@ -44,9 +44,9 @@ $("#form_categorias").on("submit", function(event){
       dataType: "html",
       contentType : false,
       processData : false,
-      url: "index.php?action=tablaCategorias",
+      url: "index.php?action=categoriaNueva",
       success: function(data){
-        $("#tabla_categorias").html(data);
+        $("#content").html(data);
       },
       error: function(){
         alert('error');

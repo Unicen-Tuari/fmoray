@@ -1,7 +1,7 @@
-<?php /* Smarty version 3.1.27, created on 2015-09-30 21:34:34
+<?php /* Smarty version 3.1.27, created on 2015-09-30 22:19:15
          compiled from "/opt/lampp/htdocs/datacom/templates/productos.tpl" */ ?>
 <?php
-/*%%SmartyHeaderCode:1547368036560c394a3ff8b6_33523047%%*/
+/*%%SmartyHeaderCode:2027189037560c43c3e9eb66_89522716%%*/
 if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
   'file_dependency' => 
@@ -9,11 +9,11 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     '5995d1ae1e01998b1c27fe67a1027198f6ab35be' => 
     array (
       0 => '/opt/lampp/htdocs/datacom/templates/productos.tpl',
-      1 => 1443641671,
+      1 => 1443644170,
       2 => 'file',
     ),
   ),
-  'nocache_hash' => '1547368036560c394a3ff8b6_33523047',
+  'nocache_hash' => '2027189037560c43c3e9eb66_89522716',
   'variables' => 
   array (
     'productos' => 0,
@@ -21,14 +21,14 @@ $_valid = $_smarty_tpl->decodeProperties(array (
   ),
   'has_nocache_code' => false,
   'version' => '3.1.27',
-  'unifunc' => 'content_560c394a4dfc16_15833113',
+  'unifunc' => 'content_560c43c4042ff8_61515192',
 ),false);
 /*/%%SmartyHeaderCode%%*/
-if ($_valid && !is_callable('content_560c394a4dfc16_15833113')) {
-function content_560c394a4dfc16_15833113 ($_smarty_tpl) {
+if ($_valid && !is_callable('content_560c43c4042ff8_61515192')) {
+function content_560c43c4042ff8_61515192 ($_smarty_tpl) {
 if (!is_callable('smarty_modifier_truncate')) require_once '/opt/lampp/htdocs/datacom/libs/plugins/modifier.truncate.php';
 
-$_smarty_tpl->properties['nocache_hash'] = '1547368036560c394a3ff8b6_33523047';
+$_smarty_tpl->properties['nocache_hash'] = '2027189037560c43c3e9eb66_89522716';
 ?>
 <div class="col-lg-3 col-md-3 col-sm-12 textos">
 	<h1>Productos</h1>

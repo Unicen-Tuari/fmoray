@@ -1,7 +1,7 @@
-<?php /* Smarty version 3.1.27, created on 2015-09-30 21:35:16
+<?php /* Smarty version 3.1.27, created on 2015-09-30 22:24:33
          compiled from "/opt/lampp/htdocs/datacom/templates/admin.tpl" */ ?>
 <?php
-/*%%SmartyHeaderCode:33714603560c3974a7f2f9_32698011%%*/
+/*%%SmartyHeaderCode:1741463529560c4501030ac2_12238393%%*/
 if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
   'file_dependency' => 
@@ -9,11 +9,11 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     'ae1a3e15c244a06bec3c01ab9545043a105c6cb3' => 
     array (
       0 => '/opt/lampp/htdocs/datacom/templates/admin.tpl',
-      1 => 1443641108,
+      1 => 1443644664,
       2 => 'file',
     ),
   ),
-  'nocache_hash' => '33714603560c3974a7f2f9_32698011',
+  'nocache_hash' => '1741463529560c4501030ac2_12238393',
   'variables' => 
   array (
     'productos' => 0,
@@ -23,13 +23,14 @@ $_valid = $_smarty_tpl->decodeProperties(array (
   ),
   'has_nocache_code' => false,
   'version' => '3.1.27',
-  'unifunc' => 'content_560c3974bb2286_25643372',
+  'unifunc' => 'content_560c450116d219_67260729',
 ),false);
 /*/%%SmartyHeaderCode%%*/
-if ($_valid && !is_callable('content_560c3974bb2286_25643372')) {
-function content_560c3974bb2286_25643372 ($_smarty_tpl) {
+if ($_valid && !is_callable('content_560c450116d219_67260729')) {
+function content_560c450116d219_67260729 ($_smarty_tpl) {
+if (!is_callable('smarty_modifier_truncate')) require_once '/opt/lampp/htdocs/datacom/libs/plugins/modifier.truncate.php';
 
-$_smarty_tpl->properties['nocache_hash'] = '33714603560c3974a7f2f9_32698011';
+$_smarty_tpl->properties['nocache_hash'] = '1741463529560c4501030ac2_12238393';
 ?>
 <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 textos detalles">
 	<h1>Administrador</h1>
@@ -68,7 +69,7 @@ $foreach_producto_Sav = $_smarty_tpl->tpl_vars['producto'];
 </td>
 		    			<td class="fuentes"><?php echo $_smarty_tpl->tpl_vars['producto']->value['nombre'];?>
 </td>
-		    			<td class="fuentes"><?php echo $_smarty_tpl->tpl_vars['producto']->value['descripcion'];?>
+		    			<td class="fuentes"><?php echo smarty_modifier_truncate($_smarty_tpl->tpl_vars['producto']->value['descripcion'],200,'');?>
 </td>
 		    			<td><?php echo $_smarty_tpl->tpl_vars['producto']->value['precio'];?>
 </td>

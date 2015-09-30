@@ -156,7 +156,7 @@ $(document).ready(function(){
 });
 
 // FUNCION PARA CARGAR DATOS AL APIREST Y AGREGARLOS A LA TABLA PRECIOS
-/* $(document).ready(function(){
+$(document).ready(function(){
 
 function enviarEinsertar(){
   if (document.formPass.password.value=="1234"){
@@ -226,7 +226,6 @@ $("#btnAgregar").on("click",function(event){
 	enviarEinsertar();
 })	
 });
-*/
 //----------------------------JUEGO---------------------------------//
 
 /* 	Dados de diferente cantidades de caras (en el código se indican la cantidad de caras de 
