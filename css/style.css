@@ -126,6 +126,7 @@ input {
   color: white;
   border-radius: 1px;
   margin-bottom: 20px;
+  border-radius: 2px;
 }
 .contenedor h1 {
   text-align: center;
@@ -216,7 +217,7 @@ input {
 .tope {
   max-height: 300px;
   margin-bottom: 10px;
-  border: 3px solid white;
+  border: 2px solid white;
 }
 .detalles p{
   font-size: 30px;

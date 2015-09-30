@@ -56,6 +56,15 @@
 	} elseif ($_REQUEST[ConfigApp::$ACTION] == ConfigApp::$ACTION_AGREGAR_IMAGENES){
 
 		 	$datacomController->agregarImagenes();
+	} elseif ($_REQUEST[ConfigApp::$ACTION] == ConfigApp::$ACTION_TABLA_PRODUCTOS){
+
+		 	$datacomController->tablaProductos();
+	} elseif ($_REQUEST[ConfigApp::$ACTION] == ConfigApp::$ACTION_TABLA_CATEGORIAS){
+
+		 	$datacomController->tablaCategorias();
+	} elseif ($_REQUEST[ConfigApp::$ACTION] == ConfigApp::$ACTION_BORRAR_PRODUCTO){
+
+		 	$datacomController->borrarProducto();
 
 	}
 

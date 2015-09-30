@@ -30,6 +30,12 @@
 		public function mostrarLista(){
 			$this->smarty->display('templates/precios.tpl');
 		}
+		public function tablaCategorias(){
+			$this->smarty->display('templates/tabla_categorias.tpl');
+		}
+		public function tablaProductos(){
+			$this->smarty->display('templates/tabla_productos.tpl');
+		}
 		public function verProducto($producto){
 			$this->smarty->assign('producto', $producto);
 			$this->smarty->display('templates/producto.tpl');
@@ -42,7 +48,6 @@
 			$this->smarty->assign('categorias', $categorias);
 			$this->smarty->assign('productos', $productos);
 			$this->smarty->display('templates/admin.tpl');
-
 		}
 	}
 

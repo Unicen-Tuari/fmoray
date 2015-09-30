@@ -1,6 +1,6 @@
 <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 textos detalles">
 	<h1>Administrador</h1>
-	<div class="table-responsive tope">
+	<div id="tabla_productos" class="table-responsive tope">
 		<h6>Tabla de Productos</h6>
 		<table class="table">
 		    <thead>
@@ -17,7 +17,8 @@
 		    	{if !empty($productos)}
 		   		{foreach $productos as $producto}
 		    		<tr>
-		    			<td>{$producto.id_producto}</td>
+		    			<td>{$producto.id_producto}
+		    			<a class="glyphicon glyphicon-trash" href="index.php?action=borrarProducto&id_producto={$producto['id_producto']}"></a></td>
 		    			<td>{$producto.id_categoria}</td>
 		    			<td>{$producto.nombre}</td>
 		    			<td class="fuentes">{$producto.descripcion}</td>
@@ -39,7 +40,7 @@
 		    </tbody>
 		</table>
 	</div>
-	<div class="table-responsive tope">
+	<div id="tabla_categorias" class="table-responsive tope">
 		<h6>Tabla de Categorias</h6>
 		<table class="table">
 		    <thead>
@@ -67,7 +68,7 @@
 	</div>
 	<form action="index.php?action=productoNuevo" method="POST" enctype="multipart/form-data">
 		<div class="bordes col-lg-offset-2 col-lg-3">
-			<h6>Agregar Producto</h6>
+			<h6>Agregar/Modificar Producto</h6>
 			<label>Categoria:</label>
 			<select id="idCategoria" name="idCategoria">	
 			    {if !empty($categorias)}
@@ -87,10 +88,11 @@
 			<input id="precio" name="precio" type="text" size="5">
 			<label for ="imagesToUpload">Ruta Imagen:</label>
 			<input class="input-file" type="file" id="imagesToUpload" name="imagesToUpload[]">
+			<label for="ID">ID(Solo para Modificar):</label><input id="id" name="id" type="text" size="1">
 			<input type="submit" value="Agregar">
 		</div>
 	</form>
-	<form action="index.php?action=categoriaNueva" method="POST" enctype="multipart/form-data">
+	<form id="form_categorias" action="index.php?action=categoriaNueva" method="POST" enctype="multipart/form-data">
 		<div class="form-group bordes col-lg-offset-2 col-lg-3">
 			<h6>Agregar Categoria</h6>
 			<label for="categoria">Nombre Categoria:</label>

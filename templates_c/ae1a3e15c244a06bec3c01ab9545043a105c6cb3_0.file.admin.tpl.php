@@ -1,7 +1,7 @@
-<?php /* Smarty version 3.1.27, created on 2015-09-30 01:25:03
+<?php /* Smarty version 3.1.27, created on 2015-09-30 19:42:03
          compiled from "/opt/lampp/htdocs/datacom/templates/admin.tpl" */ ?>
 <?php
-/*%%SmartyHeaderCode:546675742560b1dcf1d9020_53317527%%*/
+/*%%SmartyHeaderCode:923768500560c1eebcb6313_28827586%%*/
 if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
   'file_dependency' => 
@@ -9,11 +9,11 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     'ae1a3e15c244a06bec3c01ab9545043a105c6cb3' => 
     array (
       0 => '/opt/lampp/htdocs/datacom/templates/admin.tpl',
-      1 => 1443569090,
+      1 => 1443634559,
       2 => 'file',
     ),
   ),
-  'nocache_hash' => '546675742560b1dcf1d9020_53317527',
+  'nocache_hash' => '923768500560c1eebcb6313_28827586',
   'variables' => 
   array (
     'productos' => 0,
@@ -23,17 +23,17 @@ $_valid = $_smarty_tpl->decodeProperties(array (
   ),
   'has_nocache_code' => false,
   'version' => '3.1.27',
-  'unifunc' => 'content_560b1dcf31f469_80717967',
+  'unifunc' => 'content_560c1eebde9eb0_11489991',
 ),false);
 /*/%%SmartyHeaderCode%%*/
-if ($_valid && !is_callable('content_560b1dcf31f469_80717967')) {
-function content_560b1dcf31f469_80717967 ($_smarty_tpl) {
+if ($_valid && !is_callable('content_560c1eebde9eb0_11489991')) {
+function content_560c1eebde9eb0_11489991 ($_smarty_tpl) {
 
-$_smarty_tpl->properties['nocache_hash'] = '546675742560b1dcf1d9020_53317527';
+$_smarty_tpl->properties['nocache_hash'] = '923768500560c1eebcb6313_28827586';
 ?>
 <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 textos detalles">
 	<h1>Administrador</h1>
-	<div class="table-responsive tope">
+	<div id="tabla_productos" class="table-responsive tope">
 		<h6>Tabla de Productos</h6>
 		<table class="table">
 		    <thead>
@@ -61,7 +61,9 @@ $foreach_producto_Sav = $_smarty_tpl->tpl_vars['producto'];
 ?>
 		    		<tr>
 		    			<td><?php echo $_smarty_tpl->tpl_vars['producto']->value['id_producto'];?>
-</td>
+
+		    			<a class="glyphicon glyphicon-trash" href="index.php?action=borrarProducto&id_producto=<?php echo $_smarty_tpl->tpl_vars['producto']->value['id_producto'];?>
+"></a></td>
 		    			<td><?php echo $_smarty_tpl->tpl_vars['producto']->value['id_categoria'];?>
 </td>
 		    			<td><?php echo $_smarty_tpl->tpl_vars['producto']->value['nombre'];?>
@@ -92,7 +94,7 @@ $_smarty_tpl->tpl_vars['producto'] = $foreach_producto_Sav;
 		    </tbody>
 		</table>
 	</div>
-	<div class="table-responsive tope">
+	<div id="tabla_categorias" class="table-responsive tope">
 		<h6>Tabla de Categorias</h6>
 		<table class="table">
 		    <thead>
@@ -135,7 +137,7 @@ $_smarty_tpl->tpl_vars['categoria'] = $foreach_categoria_Sav;
 	</div>
 	<form action="index.php?action=productoNuevo" method="POST" enctype="multipart/form-data">
 		<div class="bordes col-lg-offset-2 col-lg-3">
-			<h6>Agregar Producto</h6>
+			<h6>Agregar/Modificar Producto</h6>
 			<label>Categoria:</label>
 			<select id="idCategoria" name="idCategoria">	
 			    <?php if (!empty($_smarty_tpl->tpl_vars['categorias']->value)) {?>
@@ -170,14 +172,16 @@ $_smarty_tpl->tpl_vars['categoria'] = $foreach_categoria_Sav;
 			<input id="precio" name="precio" type="text" size="5">
 			<label for ="imagesToUpload">Ruta Imagen:</label>
 			<input class="input-file" type="file" id="imagesToUpload" name="imagesToUpload[]">
+			<label for="ID">ID(Solo para Modificar):</label><input id="id" name="id" type="text" size="1">
 			<input type="submit" value="Agregar">
 		</div>
 	</form>
-	<form action="index.php?action=categoriaNueva" method="POST" enctype="multipart/form-data">
+	<form id="form_categorias" action="index.php?action=categoriaNueva" method="POST" enctype="multipart/form-data">
 		<div class="form-group bordes col-lg-offset-2 col-lg-3">
 			<h6>Agregar Categoria</h6>
 			<label for="categoria">Nombre Categoria:</label>
 			<input class="form-control" type="text" id="categoria" name="categoria" size="7" placeholder="Categoria">
+			<label for="ID">ID(Solo para Modificar):</label><input id="id" name="id" type="text" size="1">
 			<input type="submit" value="Agregar">
 		</div>
 	</form>  

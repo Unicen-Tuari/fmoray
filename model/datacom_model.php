@@ -11,6 +11,7 @@
 		$this->db->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 	}
 
+// FUNCION PARA AGREGAR CATEGORIA
 	function agregarCategoria($categoria){
 		try{
 			$this->db->beginTransaction();
@@ -20,16 +21,15 @@
 				$consulta = $this->db->prepare('INSERT INTO categoria(nombre_categoria) VALUES(?)');
 				$consulta->execute(array($categoria));
 				$this->db->commit();
-			}
-			
+			}			
 		}
 		catch(Exception $e){
 			$this->db->rollBack();
 			// echo 'Excepción capturada: ',  $e->getMessage(), "\n";
 		}
 	}
-
-	function agregarProducto($idCategoria, $nombreProducto, $textoDescripcion, $precio, $imagenes){
+// FUNCION PARA AGREGAR PRODUCTO
+	function agregarProducto($idCategoria, $nombreProducto, $textoDescripcion, $precio, $imagenes, $id){
 		try{
 			$destinos_finales=$this->subirImagenes($imagenes);
 			$this->db->beginTransaction();
@@ -39,6 +39,11 @@
 				$consulta = $this->db->prepare('INSERT INTO producto(id_categoria, nombre, descripcion, precio, ruta_imagen) VALUES(?, ?, ?, ?, ?)');
 				$consulta->execute(array($idCategoria, $nombreProducto, $textoDescripcion, $precio, $destinos_finales[0]));
 				$this->db->commit();
+			} 
+			if (isset($id)){
+				$consulta = $this->db->prepare('UPDATE producto SET id_categoria = ?, nombre = ?,descripcion = ?, precio = ?, ruta_imagen = ? WHERE id_producto = ?');
+				$consulta->execute(array($idCategoria, $nombreProducto, $textoDescripcion, $precio, $destinos_finales[0], $id));
+				$this->db->commit();
 			}
 
 		}
@@ -47,7 +52,7 @@
 			// echo 'Excepción capturada: ',  $e->getMessage(), "\n";
 		}
 	}
-
+// FUNCION PARA LEER LAS CATEGORIAS
 	function leerCategoria(){
 		$categorias = array();
 		$consulta = $this->db->prepare('SELECT * FROM categoria');
@@ -57,7 +62,7 @@
 		}
 		return $categorias;
 	}
-
+// FUNCION PARA LEER LOS PRODUCTOS
 	function leerProducto(){
 		$productos = array();
 		$consulta = $this->db->prepare('SELECT * FROM producto');
@@ -71,7 +76,7 @@
 		}
 		return $productos;
 	}
-
+// FUNCION PARA LEER UN PRODUCTO ESPECIFICO
 	function leerProductoInfo($id){
 			$producto = array();
 			$nombreCategoria = '';
@@ -85,7 +90,7 @@
 			return $producto;
 	}
 
-
+// FUNCION PARA SUBIR IMAGENES EN EL FORM
 	private function subirImagenes($imagenes){
 		if ($imagenes['name'][0] != ''){
 	    $carpeta = "uploads/";
@@ -98,7 +103,7 @@
 	    return $destinos_finales;
 		}
 	  }
-
+// FUNCION PARA SUBIR IMAGENES DESDE LA TABLA
 	private function subirImagenesAjax($imagenes){
 	    $carpeta = "uploads/";
 	    $destinos_finales = array();
@@ -111,7 +116,7 @@
 	    
     }
 
-
+// FUNCION PARA SUBIR IMAGENES DESDE LA TABLA
   	function agregarImagenes($id_producto, $imagenes){
   		try{
   			$this->db->beginTransaction();
@@ -125,5 +130,9 @@
 			// echo 'Excepción capturada: ',  $e->getMessage(), "\n";
 		}
   	}
+  	function borrarProducto($id_producto){
+		$consulta = $this->db->prepare('DELETE FROM producto WHERE id_producto=?');
+    	$consulta->execute(array($id_producto));
+  	}		
 }
 ?>

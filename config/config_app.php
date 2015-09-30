@@ -14,6 +14,9 @@
 		public static $ACTION_AGREGAR_CATEGORIA = 'categoriaNueva';
 		public static $ACTION_AGREGAR_PRODUCTO = 'productoNuevo';
 		public static $ACTION_AGREGAR_IMAGENES = 'agregarImagenes';
+		public static $ACTION_TABLA_PRODUCTOS = 'tablaProductos';
+		public static $ACTION_TABLA_CATEGORIAS = 'tablaCategorias';
+		public static $ACTION_BORRAR_PRODUCTO = 'borrarProducto';
 	}
 
 

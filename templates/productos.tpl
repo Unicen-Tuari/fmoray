@@ -64,4 +64,4 @@
 		</div>
 	</div>
 </div>
-<script src="js/prod.js"></script>
+<script src="js/productos.js"></script>
