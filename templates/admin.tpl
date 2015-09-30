@@ -20,7 +20,7 @@
 		    			<td>{$producto.id_producto}
 		    			<a class="glyphicon glyphicon-trash" href="index.php?action=borrarProducto&id_producto={$producto['id_producto']}"></a></td>
 		    			<td>{$producto.id_categoria}</td>
-		    			<td>{$producto.nombre}</td>
+		    			<td class="fuentes">{$producto.nombre}</td>
 		    			<td class="fuentes">{$producto.descripcion}</td>
 		    			<td>{$producto.precio}</td>
 		    			<td>{$producto.ruta_imagen}

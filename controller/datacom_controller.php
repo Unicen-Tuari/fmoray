@@ -62,7 +62,7 @@
 // FUNCION PARA LLAMAR AL MODEL PARA AGREGAR CATEGORIA
 		public function agregarCategoria(){
 			if(isset($_REQUEST['categoria'])){
-				$this->model->agregarCategoria($_REQUEST['categoria'], $_REQUEST['id']);	
+				$this->model->agregarCategoria($_REQUEST['categoria']);	
 				header('Location: index.php');
 			}
 		}
@@ -88,6 +88,7 @@
 		function agregarImagenes(){
 		    if(isset($_REQUEST['id_producto']) && isset($_FILES[0]['name'])){
 		      $this->model->agregarImagenes($_REQUEST['id_producto'],$_FILES);
+		      header('Location: index.php');
 		    }else{
 		      echo '{ "FALTA CARGAR LA IMAGEN" }';
 		    }

@@ -1,7 +1,7 @@
-<?php /* Smarty version 3.1.27, created on 2015-09-30 19:42:03
+<?php /* Smarty version 3.1.27, created on 2015-09-30 20:04:00
          compiled from "/opt/lampp/htdocs/datacom/templates/admin.tpl" */ ?>
 <?php
-/*%%SmartyHeaderCode:923768500560c1eebcb6313_28827586%%*/
+/*%%SmartyHeaderCode:2101583371560c241072c922_13672273%%*/
 if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
   'file_dependency' => 
@@ -9,11 +9,11 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     'ae1a3e15c244a06bec3c01ab9545043a105c6cb3' => 
     array (
       0 => '/opt/lampp/htdocs/datacom/templates/admin.tpl',
-      1 => 1443634559,
+      1 => 1443636232,
       2 => 'file',
     ),
   ),
-  'nocache_hash' => '923768500560c1eebcb6313_28827586',
+  'nocache_hash' => '2101583371560c241072c922_13672273',
   'variables' => 
   array (
     'productos' => 0,
@@ -23,13 +23,13 @@ $_valid = $_smarty_tpl->decodeProperties(array (
   ),
   'has_nocache_code' => false,
   'version' => '3.1.27',
-  'unifunc' => 'content_560c1eebde9eb0_11489991',
+  'unifunc' => 'content_560c2410868515_22448343',
 ),false);
 /*/%%SmartyHeaderCode%%*/
-if ($_valid && !is_callable('content_560c1eebde9eb0_11489991')) {
-function content_560c1eebde9eb0_11489991 ($_smarty_tpl) {
+if ($_valid && !is_callable('content_560c2410868515_22448343')) {
+function content_560c2410868515_22448343 ($_smarty_tpl) {
 
-$_smarty_tpl->properties['nocache_hash'] = '923768500560c1eebcb6313_28827586';
+$_smarty_tpl->properties['nocache_hash'] = '2101583371560c241072c922_13672273';
 ?>
 <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 textos detalles">
 	<h1>Administrador</h1>
@@ -66,7 +66,7 @@ $foreach_producto_Sav = $_smarty_tpl->tpl_vars['producto'];
 "></a></td>
 		    			<td><?php echo $_smarty_tpl->tpl_vars['producto']->value['id_categoria'];?>
 </td>
-		    			<td><?php echo $_smarty_tpl->tpl_vars['producto']->value['nombre'];?>
+		    			<td class="fuentes"><?php echo $_smarty_tpl->tpl_vars['producto']->value['nombre'];?>
 </td>
 		    			<td class="fuentes"><?php echo $_smarty_tpl->tpl_vars['producto']->value['descripcion'];?>
 </td>
@@ -181,7 +181,6 @@ $_smarty_tpl->tpl_vars['categoria'] = $foreach_categoria_Sav;
 			<h6>Agregar Categoria</h6>
 			<label for="categoria">Nombre Categoria:</label>
 			<input class="form-control" type="text" id="categoria" name="categoria" size="7" placeholder="Categoria">
-			<label for="ID">ID(Solo para Modificar):</label><input id="id" name="id" type="text" size="1">
 			<input type="submit" value="Agregar">
 		</div>
 	</form>  

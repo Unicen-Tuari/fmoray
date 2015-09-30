@@ -32,15 +32,16 @@
 	function agregarProducto($idCategoria, $nombreProducto, $textoDescripcion, $precio, $imagenes, $id){
 		try{
 			$destinos_finales=$this->subirImagenes($imagenes);
-			$this->db->beginTransaction();
 			$consulta_existe = $this->db->prepare('SELECT 1 FROM producto WHERE nombre =?');
 			$consulta_existe->execute(array($nombreProducto));
 			if (!$consulta_existe->fetch()){
+				$this->db->beginTransaction();
 				$consulta = $this->db->prepare('INSERT INTO producto(id_categoria, nombre, descripcion, precio, ruta_imagen) VALUES(?, ?, ?, ?, ?)');
 				$consulta->execute(array($idCategoria, $nombreProducto, $textoDescripcion, $precio, $destinos_finales[0]));
 				$this->db->commit();
 			} 
 			if (isset($id)){
+				$this->db->beginTransaction();
 				$consulta = $this->db->prepare('UPDATE producto SET id_categoria = ?, nombre = ?,descripcion = ?, precio = ?, ruta_imagen = ? WHERE id_producto = ?');
 				$consulta->execute(array($idCategoria, $nombreProducto, $textoDescripcion, $precio, $destinos_finales[0], $id));
 				$this->db->commit();
