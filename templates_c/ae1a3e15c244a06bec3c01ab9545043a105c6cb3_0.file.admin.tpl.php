@@ -1,7 +1,7 @@
-<?php /* Smarty version 3.1.27, created on 2015-09-30 20:04:00
+<?php /* Smarty version 3.1.27, created on 2015-09-30 21:35:16
          compiled from "/opt/lampp/htdocs/datacom/templates/admin.tpl" */ ?>
 <?php
-/*%%SmartyHeaderCode:2101583371560c241072c922_13672273%%*/
+/*%%SmartyHeaderCode:33714603560c3974a7f2f9_32698011%%*/
 if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
   'file_dependency' => 
@@ -9,11 +9,11 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     'ae1a3e15c244a06bec3c01ab9545043a105c6cb3' => 
     array (
       0 => '/opt/lampp/htdocs/datacom/templates/admin.tpl',
-      1 => 1443636232,
+      1 => 1443641108,
       2 => 'file',
     ),
   ),
-  'nocache_hash' => '2101583371560c241072c922_13672273',
+  'nocache_hash' => '33714603560c3974a7f2f9_32698011',
   'variables' => 
   array (
     'productos' => 0,
@@ -23,13 +23,13 @@ $_valid = $_smarty_tpl->decodeProperties(array (
   ),
   'has_nocache_code' => false,
   'version' => '3.1.27',
-  'unifunc' => 'content_560c2410868515_22448343',
+  'unifunc' => 'content_560c3974bb2286_25643372',
 ),false);
 /*/%%SmartyHeaderCode%%*/
-if ($_valid && !is_callable('content_560c2410868515_22448343')) {
-function content_560c2410868515_22448343 ($_smarty_tpl) {
+if ($_valid && !is_callable('content_560c3974bb2286_25643372')) {
+function content_560c3974bb2286_25643372 ($_smarty_tpl) {
 
-$_smarty_tpl->properties['nocache_hash'] = '2101583371560c241072c922_13672273';
+$_smarty_tpl->properties['nocache_hash'] = '33714603560c3974a7f2f9_32698011';
 ?>
 <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 textos detalles">
 	<h1>Administrador</h1>

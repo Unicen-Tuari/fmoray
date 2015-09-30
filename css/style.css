@@ -174,7 +174,7 @@ input {
 }
 .productos_lista {
   width: 210px;
-  height: 360px;
+  height: 420px;
   border-radius: 5px;
   border: 2px solid #fff;
   float: left;
@@ -186,7 +186,21 @@ input {
 }
 .productos_lista img {
   width: 206px;
-  height: 145px;
+  height: 206px;
+}
+.infoProducto img{
+  width: 400px !important;
+  height: 400px !important;
+}
+.infoProducto {
+  text-align: center;
+}
+.infoProducto h1, h2{
+  text-decoration: underline;
+  margin-bottom: 20px;
+}
+.infoProducto p {
+  font-size: 20px !important;
 }
 .resaltar {
   color: #CFB459;

@@ -24,7 +24,7 @@
 				<h5>{$producto['nombreCategoria']}</h5>
 				<img src="{$producto.ruta_imagen}" alt="">
 				<h5>{$producto.nombre}</h5>
-				<p><span class="resaltar">${$producto.precio}</span><br />o 10 cuotas de <span class="resaltar">${$producto.precio / 10}</span></p>
+				<p><span class="resaltar">${$producto.precio}</span><br />o 12 cuotas de <span class="resaltar">${($producto.precio / 12)|truncate:5:""}</span></p>
 				<button class="btn btn-default btnProducto" value="{$producto.id_producto}">Mas...</button>
 			</div>
 		</div>

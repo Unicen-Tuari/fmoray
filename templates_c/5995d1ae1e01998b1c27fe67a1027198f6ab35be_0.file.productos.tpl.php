@@ -1,7 +1,7 @@
-<?php /* Smarty version 3.1.27, created on 2015-09-30 01:57:12
+<?php /* Smarty version 3.1.27, created on 2015-09-30 21:34:34
          compiled from "/opt/lampp/htdocs/datacom/templates/productos.tpl" */ ?>
 <?php
-/*%%SmartyHeaderCode:773117782560b2558abfc22_24136307%%*/
+/*%%SmartyHeaderCode:1547368036560c394a3ff8b6_33523047%%*/
 if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
   'file_dependency' => 
@@ -9,11 +9,11 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     '5995d1ae1e01998b1c27fe67a1027198f6ab35be' => 
     array (
       0 => '/opt/lampp/htdocs/datacom/templates/productos.tpl',
-      1 => 1443571013,
+      1 => 1443641671,
       2 => 'file',
     ),
   ),
-  'nocache_hash' => '773117782560b2558abfc22_24136307',
+  'nocache_hash' => '1547368036560c394a3ff8b6_33523047',
   'variables' => 
   array (
     'productos' => 0,
@@ -21,13 +21,14 @@ $_valid = $_smarty_tpl->decodeProperties(array (
   ),
   'has_nocache_code' => false,
   'version' => '3.1.27',
-  'unifunc' => 'content_560b2558b91246_89513818',
+  'unifunc' => 'content_560c394a4dfc16_15833113',
 ),false);
 /*/%%SmartyHeaderCode%%*/
-if ($_valid && !is_callable('content_560b2558b91246_89513818')) {
-function content_560b2558b91246_89513818 ($_smarty_tpl) {
+if ($_valid && !is_callable('content_560c394a4dfc16_15833113')) {
+function content_560c394a4dfc16_15833113 ($_smarty_tpl) {
+if (!is_callable('smarty_modifier_truncate')) require_once '/opt/lampp/htdocs/datacom/libs/plugins/modifier.truncate.php';
 
-$_smarty_tpl->properties['nocache_hash'] = '773117782560b2558abfc22_24136307';
+$_smarty_tpl->properties['nocache_hash'] = '1547368036560c394a3ff8b6_33523047';
 ?>
 <div class="col-lg-3 col-md-3 col-sm-12 textos">
 	<h1>Productos</h1>
@@ -69,7 +70,7 @@ $foreach_producto_Sav = $_smarty_tpl->tpl_vars['producto'];
 				<h5><?php echo $_smarty_tpl->tpl_vars['producto']->value['nombre'];?>
 </h5>
 				<p><span class="resaltar">$<?php echo $_smarty_tpl->tpl_vars['producto']->value['precio'];?>
-</span><br />o 10 cuotas de <span class="resaltar">$<?php echo $_smarty_tpl->tpl_vars['producto']->value['precio']/10;?>
+</span><br />o 12 cuotas de <span class="resaltar">$<?php echo smarty_modifier_truncate(($_smarty_tpl->tpl_vars['producto']->value['precio']/12),5,'');?>
 </span></p>
 				<button class="btn btn-default btnProducto" value="<?php echo $_smarty_tpl->tpl_vars['producto']->value['id_producto'];?>
 ">Mas...</button>

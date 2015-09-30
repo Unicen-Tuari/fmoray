@@ -11,7 +11,7 @@ create table producto (
   id_producto integer not null AUTO_INCREMENT,
   id_categoria integer not null,
   nombre varchar (40) not null,
-  descripcion varchar(200) not null,
+  descripcion varchar(1000) not null,
   precio numeric(7,2) not null,
   ruta_imagen varchar(100) null,
   constraint pk_Producto primary key(id_producto)

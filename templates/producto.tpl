@@ -1,10 +1,11 @@
-<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 textos detalles">
+<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 infoProducto detalles">
 	{if !empty($producto)}
 		<h1>{$producto['nombreCategoria']}</h1>
 		<div><img src="{$producto.ruta_imagen}" alt=""></div>
-		<h3>{$producto.nombre}</h3>
+		<h2>{$producto.nombre}</h2>
 		<p>{$producto.descripcion}</p>
-		<p><span class="resaltar">${$producto.precio}</span><br />o 10 cuotas de <span class="resaltar">${$producto.precio / 10}</span></p>
+		<h2>Precio:</h2>
+		<p><span class="resaltar">${$producto.precio}</span><br />o 12 cuotas de <span class="resaltar">${($producto.precio / 12)|truncate:5:""}</span></p>
 	{/if}
 </div>
 

@@ -1,4 +1,3 @@
-
 create table categoria (
 
   id_categoria integer not null AUTO_INCREMENT,
